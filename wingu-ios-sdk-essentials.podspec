@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Essentials part of wingu iOS SDK
+Essentials part of wingu iOS SDK. Visit www.wingu.de to know more.
                        DESC
 
   s.homepage         = 'https://github.com/wingu-GmbH/wingu-ios-sdk-essentials'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.author           = { 'Jakub Mazur' => 'jakub.mazur@wingu.de', 'Mateusz Staruchowicz' => 'mateusz.staruchowicz@wingu.de' }
-  s.source           = { :git => 'https://github.com/wingu-GmbH//wingu-ios-sdk-essentials.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wingu-GmbH/wingu-ios-sdk-essentials.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wingude'
   s.frameworks = 'UIKit','Foundation','CoreLocation'
   s.ios.deployment_target = '9.0'
