@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  winguEssentialsDemo
+//  wingu-ios-sdk-essentials
 //
-//  Created by Jakub Mazur on 24/04/2018.
-//  Copyright © 2018 Jakub Mazur. All rights reserved.
+//  Created by JakubMazur on 04/24/2018.
+//  Copyright (c) 2018 JakubMazur. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         winguLocations.delegate = self
         return winguLocations
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         winguLocations.startRangingBeacons(regions: [], locationManager: nil)
