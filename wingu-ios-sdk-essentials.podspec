@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wingu-ios-sdk-essentials'
-  s.version          = '0.1.0'
+  s.version          = '0.1.0'                   #sh_replace_version
   s.summary          = 'Essentials part of wingu iOS SDK'
 
 # This description is used to generate tags and improve search results.
