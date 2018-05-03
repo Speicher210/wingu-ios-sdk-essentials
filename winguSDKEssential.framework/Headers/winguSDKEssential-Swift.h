@@ -217,6 +217,51 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Address")
 
 
 
+SWIFT_CLASS("_TtC17winguSDKEssential10AudioAlbum")
+@interface AudioAlbum : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential10AudioMedia")
+@interface AudioMedia : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+/// sourcery:key=audio_playlist
+SWIFT_CLASS("_TtC17winguSDKEssential22AudioPlaylistComponent")
+@interface AudioPlaylistComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential7Barcode")
+@interface Barcode : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 SWIFT_CLASS("_TtC17winguSDKEssential7Channel")
 @interface Channel : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -235,11 +280,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+
+
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 
@@ -322,10 +367,60 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
+/// sourcery:key=contact
+SWIFT_CLASS("_TtC17winguSDKEssential16ContactComponent")
+@interface ContactComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential23ContactComponentAddress")
+@interface ContactComponentAddress : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential27ContactComponentSocialMedia")
+@interface ContactComponentSocialMedia : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 @interface Content : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+
+
+/// sourcery:key=coupon
+SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
+@interface CouponComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 
 
@@ -338,6 +433,20 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 @interface Deck : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
+@interface FileComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 
 
@@ -391,6 +500,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
+
+
 SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 @interface ImageMetadata : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -405,6 +516,21 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Location")
 @interface Location : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+
+
+/// sourcery:key=location
+SWIFT_CLASS("_TtC17winguSDKEssential17LocationComponent")
+@interface LocationComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 
 
@@ -455,10 +581,42 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Position")
 
 
 
+/// sourcery:key=rating
+SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
+@interface RatingComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+/// sourcery:key=separator
+SWIFT_CLASS("_TtC17winguSDKEssential18SeparatorComponent")
+@interface SeparatorComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
 SWIFT_CLASS("_TtC17winguSDKEssential21SurveyMonkeyComponent")
 @interface SurveyMonkeyComponent : Component
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -482,6 +640,35 @@ SWIFT_CLASS("_TtC17winguSDKEssential14VideoComponent")
 @end
 
 
+
+
+
+
+
+
+
+
+/// sourcery:key=webhook
+SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
+@interface WebhookComponent : Component
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+
+
+
+
+
+
+SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
+@interface WinguFile : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -529,10 +716,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 /// Callbacks from <code>CLLocationManagerDelegate</code> needed to make <code>WinguLocationManager</code> working
 SWIFT_PROTOCOL("_TtP17winguSDKEssential22WinguLocationsDelegate_")
 @protocol WinguLocationsDelegate
+@optional
 /// Authorization status gives you informations about current state of authorizationStatus.
 /// \param authorizationStatus CLAuthorizationStatus, may be called several times, especially in a first run, when we ask user for permissions to use location.
 ///
 - (void)authorizationStatus:(CLAuthorizationStatus)authorizationStatus;
+@required
 /// Returns always whole list of regions in range
 /// \param regions Wingu regions
 ///
@@ -542,6 +731,10 @@ SWIFT_PROTOCOL("_TtP17winguSDKEssential22WinguLocationsDelegate_")
 /// \param channel updated channel
 ///
 - (void)updatedContent:(Channel * _Nonnull)channel;
+/// Whenever physical object change parameters this will return complete channel object with all updated parameters.
+/// \param channel updated channel
+///
+- (void)updatePhysicalInfo:(Channel * _Nonnull)channel;
 @end
 
 #if __has_attribute(external_source_symbol)
