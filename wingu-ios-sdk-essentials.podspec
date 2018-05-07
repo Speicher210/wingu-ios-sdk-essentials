@@ -42,3 +42,4 @@ Essentials part of wingu iOS SDK. Visit www.wingu.de to know more.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
