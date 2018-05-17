@@ -32,6 +32,10 @@ Jakub Mazur, jakub.mazur@wingu.de
 
 Mateusz Staruchowicz, mateusz.staruchowicz@wingu.de
 
+## wingu
+
+This is a wingu open source project. With wingu platform, API and SDK it is easier then ever to use proximity technologies in new and exciting ways, such as creating a simple app or adding proximity functionality to your existing application. For more information check out: [https://www.wingu.de/en/developer/](https://www.wingu.de/en/developer/) or start a free trail at [https://wingu-portal.de/register.](https://wingu-portal.de/register.)
+
 ## License
 
 wingu-ios-sdk-essentials is available under the Apache-2.0 license. See the LICENSE file for more info.
