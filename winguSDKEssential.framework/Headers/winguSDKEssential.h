@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double winguSDKEssentialVersionNumber;
 FOUNDATION_EXPORT const unsigned char winguSDKEssentialVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <winguSDKEssential/PublicHeader.h>
-
-

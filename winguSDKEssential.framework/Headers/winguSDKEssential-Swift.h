@@ -186,15 +186,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+/// <code>Component</code> is a base class for all elements configurable inside wingu portal. It represents single object created inside your content.<br/>
+/// The base <code>Component</code> object shouldn’t be used or created directly.
 SWIFT_CLASS("_TtC17winguSDKEssential9Component")
 @interface Component : NSObject
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-/// sourcery:key=action
+/// Action Component is element that trigger redirection from the deck. Currently support types are listed under <code>ActionComponent.ActionType</code> section<br>
+/// Example view generated using this component will look like this:
+/// <img src="../docs_assets/ActionComponent.png" alt="Action Component"/>
+/// Where you can change parameters like corner radius, fonts and colors.
 SWIFT_CLASS("_TtC17winguSDKEssential15ActionComponent")
 @interface ActionComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -207,6 +214,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential15ActionComponent")
 
 
 
+/// Contain informations about address in readable format. Usually associated with <code>Location</code> object.
 SWIFT_CLASS("_TtC17winguSDKEssential7Address")
 @interface Address : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -217,6 +225,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Address")
 
 
 
+/// Contains information about album that is associated with mp3 file imported to wingu portal.<br>
+/// This will filled up with ID3 (or ID3v2) tags from mp3 file.
 SWIFT_CLASS("_TtC17winguSDKEssential10AudioAlbum")
 @interface AudioAlbum : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -227,6 +237,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential10AudioAlbum")
 
 
 
+/// Describes information about media inside <code>AudioPlaylistComponent</code><br/>
+/// By default it’s mp3 files and some parameters (ex. <code>album</code>) is based on mp3 tags. Some of them are fetched from wingu portal (ex. <code>name</code>)
 SWIFT_CLASS("_TtC17winguSDKEssential10AudioMedia")
 @interface AudioMedia : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -237,9 +249,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential10AudioMedia")
 
 
 
-/// sourcery:key=audio_playlist
+/// Match Audio Component configurable in wingu portal. <br/>
+/// <img src="../docs_assets/AudioPlaylistComponent.png" alt="Audio Playlist Component"/><br/>
+/// This is a collection of mp3 playable whenever <code>Deck</code> is on screen. It’s partially based on mp3 ID3 tags and partially on configuration in wingu portal.
 SWIFT_CLASS("_TtC17winguSDKEssential22AudioPlaylistComponent")
 @interface AudioPlaylistComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -252,6 +267,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential22AudioPlaylistComponent")
 
 
 
+/// Typically associated with CouponComponent object. Represent barcode that can be scanned using other readers.
 SWIFT_CLASS("_TtC17winguSDKEssential7Barcode")
 @interface Barcode : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -262,14 +278,32 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Barcode")
 
 
 
+/// Base representation of some wingu trigger configured in portal. All detailed triggers like <code>Geofence</code> or <code>Beacon</code> will inherit from this class.<br/>
+/// Detailed information about triggers can be found in class specific for every type. This class contain parameters related to wingu portal or time of discovery.</br>
+/// <blockquote>
+/// <em>Note:</em> All delegates method will always return <code>Channel</code> or collection of <code>Channel</code> even if you monitor only for one type.
+///
+/// </blockquote>
+/// However object of this class without subclass cannot be used for anything inside wingu SDK. Initialization should be avoided and all method will map to one of the supported subclass.<br/>
+/// <img src="../docs_assets/Channel.png" alt="Channel"/></br>
+/// <code>Pack</code> collection for multilanguage is not supported with current version of the SDK. It will be returned always with end-user device language whenever your configured content on wingu portal supports it.
 SWIFT_CLASS("_TtC17winguSDKEssential7Channel")
 @interface Channel : NSObject
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// Representation of <code>CoreLocation</code> class <code>CLBeacon</code> with extra arguments from wingu portal.<br/>
+/// This class combines fetched arguments from wingu portal such as <code>Deck</code>, <code>Pack</code>, <code>Content</code> and match it with physical characteristic of the beacon. All parameters from <code>CLBeacon</code> will be matched with the same naming to this class.<br/>
+/// <blockquote>
+/// <em>Note</em>: This is not extend or override any <code>CLBeacon</code> parameters. Any changes in object of this class will not take any effect in physical beacon!<br/>
+///
+/// </blockquote>
+/// This class is marked as <code>final</code>, this shouldn’t need subclassed. If there is a need to change minor/major/uuid of physical beacon this should be done with beacons manufacturer dedicated application or SDK.
 SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 @interface Beacon : Channel
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -283,6 +317,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -291,7 +326,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
-/// Layer of abstraction for <code>CoreLocation</code> ranging & monitoring iBeacons
+/// Layer of abstraction for <code>CoreLocation</code> ranging & monitoring iBeacons. This is build using Singleton principle. There will never be a need to use more than one instance of <code>BeaconScanner</code> to work with wingu beacons. By default regions to monitor and ranging are equal and default wingu regions apply if not specyfied otherwise.
 SWIFT_CLASS("_TtC17winguSDKEssential13BeaconScanner")
 @interface BeaconScanner : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -300,6 +335,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential13BeaconScanner")
 
 
 
+/// Associated with <code>Geofence</code>. Contains values that descibe specyfic area created in wingu portal.<br/>
+/// Usually it’s 5 coordinates in collection from SE to SW clockwise and close the shape.
+/// <img src="../docs_assets/Boundaries.gif" alt="Boundaries"/></br>
+/// Check all available types in <code>BoundaryType</code> enum.
 SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 @interface Boundary : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -318,9 +357,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
-/// sourcery:key=cms
+/// CMSComponent is a representation of Markdown or HTML component created in wingu portal.
 SWIFT_CLASS("_TtC17winguSDKEssential12CMSComponent")
 @interface CMSComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -333,6 +373,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential12CMSComponent")
 
 
 
+/// Defines position of components inside <code>Deck</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 @interface Card : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -367,9 +408,17 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
-/// sourcery:key=contact
+/// It is a representation of info card in wingu portal. It may look like this:<br/>
+/// <img src="../docs_assets/ContactComponent.png" alt="Contact Component"/></br>
+/// It is possible to store all information in iOS default <code>Contacts</code> app, however there is need to add <code>NSContactsUsageDescription</code> in <code>Info.plist</code> file.
+/// <blockquote>
+/// <em>Note:</em> iOS 11+ will raise any helpful flag and simply app will crash in case of missing key in <code>Info.plist</code> file mentioned above.
+///
+/// </blockquote>
+/// By default all links will be <code>https</code> ready from wingu portal if not specified otherwise.
 SWIFT_CLASS("_TtC17winguSDKEssential16ContactComponent")
 @interface ContactComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -382,6 +431,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential16ContactComponent")
 
 
 
+/// Contain detail information about address split into different field<br/>
+/// This should help show address using Maps app directly from <code>ContactComponent</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential23ContactComponentAddress")
 @interface ContactComponentAddress : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -392,8 +443,9 @@ SWIFT_CLASS("_TtC17winguSDKEssential23ContactComponentAddress")
 
 
 
-SWIFT_CLASS("_TtC17winguSDKEssential27ContactComponentSocialMedia")
-@interface ContactComponentSocialMedia : NSObject
+/// Social Media references. In Contacts apps there are facebook, twitter and yelp already natively supported. Google + will be transfered to plain texts or skipped, since there is no support for it in OS level.
+SWIFT_CLASS("_TtC17winguSDKEssential18ContactSocialMedia")
+@interface ContactSocialMedia : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -402,6 +454,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential27ContactComponentSocialMedia")
 
 
 
+/// Contains informations about components configured in wingu portal and languages that it’s available.
+/// <blockquote>
+/// <em>Note:</em> There is no need to manually selected languages. It will automatically match device preferences.
+///
+/// </blockquote>
+/// There is possible that <code>Channel</code> object can exist without content. Force casting is hightly unrecommended.
 SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 @interface Content : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -412,9 +470,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 
 
 
-/// sourcery:key=coupon
+/// CouponComponent works with <code>Barcode</code> to provide reach experience. It may look like this:
+/// <img src="../docs_assets/CouponComponent.png" alt="Coupon Component"/></br>
+/// Barcode generation happen on OS level using <code>Machine Readable Object Types</code> such as EAN-13. To learn more visit <a href="https://developer.apple.com/documentation/avfoundation/avmetadataobject.objecttype/1618807-ean13">Official Apple Documentation</a>
+/// Coupon is entirly configurable in wingu portal
 SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 @interface CouponComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -429,6 +491,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 
 
 
+/// Contains information about all components and cards. This is a representation of an object created in wingu portal. This is already localized to match device selected language.
 SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 @interface Deck : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -439,8 +502,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 
 
 
+/// Collection of files added in wingu portal.
 SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 @interface FileComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -455,9 +520,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 
 
 
-/// sourcery:key=image_gallery
+/// Gallery Component contain both single images inline in text and multiple pictures.
+/// Images are not directly accessible from <code>GalleryComponent</code>, they’re wrapped in <code>WinguImage</code> and plain <code>Image</code> classes.
 SWIFT_CLASS("_TtC17winguSDKEssential16GalleryComponent")
 @interface GalleryComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -490,6 +557,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential15GeofenceScanner")
 @end
 
 
+/// Contains informations about image.
+/// For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</a>. In this case <code>uID</code> will contain id of a picture in cloudinary.
 SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 @interface Image : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -502,6 +571,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
+/// Contains information about image before download
 SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 @interface ImageMetadata : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -512,6 +582,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 
 
 
+/// Location of the channel. Usually connected to <code>Channel</code> object and depends of channel type (<code>Geofence</code>, <code>Beacon</code>…). Please note that any of this fields can be <code>nil</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential8Location")
 @interface Location : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -522,9 +593,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Location")
 
 
 
-/// sourcery:key=location
+/// Location Component is a representation of wingu portal Map.<br/>
+/// <img src="../docs_assets/LocationComponent.png" alt="Location Component"/></br>
+/// This component using standard <code>CoreLocation</code> method and arguments and it’s <em>always</em> a circle.
 SWIFT_CLASS("_TtC17winguSDKEssential17LocationComponent")
 @interface LocationComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -665,6 +739,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
 
 
 
+/// Single file object associated with <code>FileComponent</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
 @interface WinguFile : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -677,6 +752,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
 
 
 
+/// Wrap <code>Image</code> object to provide necessery information about picture before start download.<br/>
+/// This class will provide dimensions of selected picture and position among other ones. Position existance in this class usually indicates relation with <code>GalleryComponent</code>
 SWIFT_CLASS("_TtC17winguSDKEssential10WinguImage")
 @interface WinguImage : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
