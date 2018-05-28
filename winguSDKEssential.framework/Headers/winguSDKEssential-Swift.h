@@ -502,6 +502,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 
 
 
+
+
 /// Collection of files added in wingu portal.
 SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 @interface FileComponent : Component
@@ -537,8 +539,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential16GalleryComponent")
 
 
 
+/// Representation of geofence area from wingu portal, Configurable in wingu portal contains usually already prepared content, without extra fetches (like in a case of iBeacon).<br/>
+/// In case of missing content in geofence by default it will not be shown in <code>WinguLocations</code> and will not be returned through delegate methods.
 SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 @interface Geofence : Channel
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -551,6 +556,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 
 
+/// Scanner for geofences. It shared some behaviours from <code>BeaconScanner</code> whenever it makes sense.<br/>
+/// <code>GeofenceScanner</code> manage geofences for both background and foreground app state.
 SWIFT_CLASS("_TtC17winguSDKEssential15GeofenceScanner")
 @interface GeofenceScanner : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -611,6 +618,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential17LocationComponent")
 
 
 
+/// Allows you to receive <code>UILocalNotification</code> through wingu platform.<br/>
+/// <blockquote>
+/// <em>Note:</em> wingu not sending push notifications only <code>UILocalNotification</code> whenever near <code>Channel</code>. There is no need to configure Apple Developer Certificate to handle Push Notification when app does not support it.<br/>
+///
+/// </blockquote>
+/// In order to receive notifications there might be different action required for different <code>Channel</code> type.<br/>
 SWIFT_CLASS("_TtC17winguSDKEssential20NotificationsManager")
 @interface NotificationsManager : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -621,10 +634,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential20NotificationsManager")
 
 SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface NotificationsManager (SWIFT_EXTENSION(winguSDKEssential)) <UNUserNotificationCenterDelegate>
+/// :nodoc:
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 @end
 
 
+/// Contains already localized <code>Deck</code> with <code>Card</code> collection.
 SWIFT_CLASS("_TtC17winguSDKEssential4Pack")
 @interface Pack : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -635,6 +650,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Pack")
 
 
 
+/// Usually associated with a <code>Deck</code> and contains information about language of the <code>Deck</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 @interface PackLocale : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -645,6 +661,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 
 
 
+/// Contain information about deck arrangement.
 SWIFT_CLASS("_TtC17winguSDKEssential8Position")
 @interface Position : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -655,9 +672,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Position")
 
 
 
-/// sourcery:key=rating
+/// Representation of rating from wingu portal.<br/>
+/// The values 0-5 are fixed and cannot be changed.
 SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 @interface RatingComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -670,9 +689,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 
 
 
-/// sourcery:key=separator
+/// Representation of separator components in wingu portal.<br/>
+/// There is couple of styles of components to be picked, but all should be set in portal.<br/>
+/// Type here should be threated as read-only and shouldn’t be overriden.
 SWIFT_CLASS("_TtC17winguSDKEssential18SeparatorComponent")
 @interface SeparatorComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -685,8 +707,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential18SeparatorComponent")
 
 
 
+/// Survey Monkey component redirect to form of the survey. This is representation of component with a same name in wingu portal.<br/>
+/// It is not possible to configure fullscreen. Component only shows preview and redirect to <code>WKWebView</code> that shows fullscreen survey using Survey Monkey responsive version of the website.
 SWIFT_CLASS("_TtC17winguSDKEssential21SurveyMonkeyComponent")
 @interface SurveyMonkeyComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -707,9 +732,15 @@ SWIFT_CLASS("_TtC17winguSDKEssential21SurveyMonkeyComponent")
 
 
 
-/// sourcery:key=video
+
+
+
+
+/// Video component is a representation of component from wingu portal.<br/>
+/// It’s usually youtube and shown with provided by Google component with trademark and with iframe.</br>
 SWIFT_CLASS("_TtC17winguSDKEssential14VideoComponent")
 @interface VideoComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -722,9 +753,11 @@ SWIFT_CLASS("_TtC17winguSDKEssential14VideoComponent")
 
 
 
-/// sourcery:key=webhook
+/// Component that trigger third party action from connected website configured in wingu portal<br/>
+/// It connects automatically to API and trigger action.
 SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
 @interface WebhookComponent : Component
+/// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -764,8 +797,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential10WinguImage")
 
 
 
-/// Use <code>WinguLocations</code> to manage all your triggers and locations inside wingu platform.
-/// Keep in mind lifecycle of <code>CLLocationManager</code> and do not dealloc it when you still willing to receive callbacks from this class
+/// Use <code>WinguLocations</code> to manage all triggers and locations inside wingu platform.<br/>
+/// This class provide a way for managing zones and beacons in SDK. <br/>
+/// <blockquote>
+/// <em>Note:</em> <code>CLLocationManager</code> shouldn’t be deallocated if notifications are required.
+///
+/// </blockquote>
 SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 @interface WinguLocations : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

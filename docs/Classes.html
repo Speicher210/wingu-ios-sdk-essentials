@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (82% documented)</p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -151,9 +151,6 @@
                 <a href="Classes/RatingComponent.html">RatingComponent</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/RatingComponent/UserInfoKeys.html">– UserInfoKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/SeparatorComponent.html">SeparatorComponent</a>
               </li>
               <li class="nav-group-task">
@@ -186,16 +183,10 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/CLLocationCoordinate2D.html">CLLocationCoordinate2D</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Extensions/CLLocationCoordinate2D/CodingKeys.html">– CodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Extensions/RediscoverNotificationTime.html">RediscoverNotificationTime</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
+                <a href="Extensions/UNNotificationAction.html">UNNotificationAction</a>
               </li>
             </ul>
           </li>
@@ -969,7 +960,8 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>sourcery:key=rating</p>
+                        <p>Representation of rating from wingu portal.<br/>
+The values 0-5 are fixed and cannot be changed.</p>
 
                         <a href="Classes/RatingComponent.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1001,7 +993,9 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>sourcery:key=separator</p>
+                        <p>Representation of separator components in wingu portal.<br/>
+There is couple of styles of components to be picked, but all should be set in portal.<br/>
+Type here should be threated as read-only and shouldn&rsquo;t be overriden.</p>
 
                         <a href="Classes/SeparatorComponent.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1033,7 +1027,8 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Survey Monkey component redirect to form of the survey. This is representation of component with a same name in wingu portal.<br/>
+It is not possible to configure fullscreen. Component only shows preview and redirect to <code>WKWebView</code> that shows fullscreen survey using Survey Monkey responsive version of the website.</p>
 
                         <a href="Classes/SurveyMonkeyComponent.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1065,7 +1060,8 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>sourcery:key=video</p>
+                        <p>Video component is a representation of component from wingu portal.<br/>
+It&rsquo;s usually youtube and shown with provided by Google component with trademark and with iframe.</br></p>
 
                         <a href="Classes/VideoComponent.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1097,7 +1093,8 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>sourcery:key=webhook</p>
+                        <p>Component that trigger third party action from connected website configured in wingu portal<br/>
+It connects automatically to API and trigger action.</p>
 
                         <a href="Classes/WebhookComponent.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1199,7 +1196,8 @@ This component using standard <code>CoreLocation</code> method and arguments and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Representation of geofence area from wingu portal, Configurable in wingu portal contains usually already prepared content, without extra fetches (like in a case of iBeacon).<br/>
+In case of missing content in geofence by default it will not be shown in <code><a href="Classes/WinguLocations.html">WinguLocations</a></code> and will not be returned through delegate methods.</p>
 
                         <a href="Classes/Geofence.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1361,7 +1359,7 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Contains already localized <code><a href="Classes/Deck.html">Deck</a></code> with <code><a href="Classes/Card.html">Card</a></code> collection.</p>
 
                         <a href="Classes/Pack.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1393,7 +1391,7 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Usually associated with a <code><a href="Classes/Deck.html">Deck</a></code> and contains information about language of the <code><a href="Classes/Deck.html">Deck</a></code>.</p>
 
                         <a href="Classes/PackLocale.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1425,7 +1423,7 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Contain information about deck arrangement.</p>
 
                         <a href="Classes/Position.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1457,7 +1455,8 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Scanner for geofences. It shared some behaviours from <code><a href="Classes/BeaconScanner.html">BeaconScanner</a></code> whenever it makes sense.<br/>
+<code>GeofenceScanner</code> manage geofences for both background and foreground app state.</p>
 
                         <a href="Classes/GeofenceScanner.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1489,7 +1488,13 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Allows you to receive <code>UILocalNotification</code> through wingu platform.<br/></p>
+
+<blockquote>
+<p><strong>Note:</strong> wingu not sending push notifications only <code>UILocalNotification</code> whenever near <code><a href="Classes/Channel.html">Channel</a></code>. There is no need to configure Apple Developer Certificate to handle Push Notification when app does not support it.<br/></p>
+</blockquote>
+
+<p>In order to receive notifications there might be different action required for different <code><a href="Classes/Channel.html">Channel</a></code> type.<br/></p>
 
                         <a href="Classes/NotificationsManager.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1521,9 +1526,12 @@ This class will provide dimensions of selected picture and position among other 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Use <code>WinguLocations</code> to manage all your triggers and locations inside wingu platform.</p>
+                        <p>Use <code>WinguLocations</code> to manage all triggers and locations inside wingu platform.<br/>
+This class provide a way for managing zones and beacons in SDK. <br/></p>
 
-<p>Keep in mind lifecycle of <code>CLLocationManager</code> and do not dealloc it when you still willing to receive callbacks from this class</p>
+<blockquote>
+<p><strong>Note:</strong> <code>CLLocationManager</code> shouldn&rsquo;t be deallocated if notifications are required.</p>
+</blockquote>
 
                         <a href="Classes/WinguLocations.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1543,7 +1551,7 @@ This class will provide dimensions of selected picture and position among other 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-23)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
