@@ -225,6 +225,28 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Address")
 
 
 
+/// Contains information about image and it’s alignment.
+SWIFT_CLASS("_TtC17winguSDKEssential14AlignmentImage")
+@interface AlignmentImage : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+/// Contains information about text alignment.
+SWIFT_CLASS("_TtC17winguSDKEssential13AlignmentText")
+@interface AlignmentText : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
 /// Contains information about album that is associated with mp3 file imported to wingu portal.<br>
 /// This will filled up with ID3 (or ID3v2) tags from mp3 file.
 SWIFT_CLASS("_TtC17winguSDKEssential10AudioAlbum")
@@ -261,6 +283,17 @@ SWIFT_CLASS("_TtC17winguSDKEssential22AudioPlaylistComponent")
 
 
 
+
+
+
+
+
+
+/// Contains information about background color.
+SWIFT_CLASS("_TtC17winguSDKEssential10Background")
+@interface Background : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -343,6 +376,23 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 @interface Boundary : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+
+
+
+
+/// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
+/// Brand bar allow to put text and image.
+SWIFT_CLASS("_TtC17winguSDKEssential17BrandBarComponent")
+@interface BrandBarComponent : Component
+/// :nodoc:
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
