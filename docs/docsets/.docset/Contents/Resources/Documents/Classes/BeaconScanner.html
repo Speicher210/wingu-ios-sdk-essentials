@@ -249,7 +249,7 @@
             <h1>BeaconScanner</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BeaconScanner</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">BeaconScanner</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -280,7 +280,7 @@ By default this value is <em>1 hour</em> (RediscoverNotificationTime.hourly). Se
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rediscoverNotificationTime</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:17winguSDKEssential26RediscoverNotificationTimea">RediscoverNotificationTime</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">hourly</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rediscoverNotificationTime</span><span class="p">:</span> <span class="nf">RediscoverNotificationTime</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -309,7 +309,7 @@ Value needs to be greater than <code>BeaconLostTime.instant</code> (2 seconds). 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconLostOffset</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:17winguSDKEssential14BeaconLostTimea">BeaconLostTime</a></span> <span class="o">=</span> <span class="kt"><a href="../Typealiases.html#/s:17winguSDKEssential14BeaconLostTimea">BeaconLostTime</a></span><span class="o">.</span><span class="n">instant</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconLostOffset</span><span class="p">:</span> <span class="nf">BeaconLostTime</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -343,7 +343,7 @@ By default it&rsquo;s <code>normal</code> (60 seconds).</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconFetchDataTime</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:17winguSDKEssential19BeaconFetchDataTimea">BeaconFetchDataTime</a></span> <span class="o">=</span> <span class="kt"><a href="../Typealiases.html#/s:17winguSDKEssential19BeaconFetchDataTimea">BeaconFetchDataTime</a></span><span class="o">.</span><span class="n">normal</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">beaconFetchDataTime</span><span class="p">:</span> <span class="nf">BeaconFetchDataTime</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -371,7 +371,7 @@ This property will be overriden by direct call <code>startMonitoringBeacons(regi
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">shouldMonitorForBeaconsInBackground</span><span class="p">:</span> <span class="kt"><a href="../Classes/BeaconScanner/MonitoringState.html">MonitoringState</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">sameAsRanging</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">shouldMonitorForBeaconsInBackground</span><span class="p">:</span> <span class="kt">BeaconScanner</span><span class="o">.</span><span class="kt"><a href="../Classes/BeaconScanner/MonitoringState.html">MonitoringState</a></span></code></pre>
 
                         </div>
                       </div>
@@ -454,7 +454,7 @@ This property will be overriden by direct call <code>startMonitoringBeacons(regi
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanningState</span><span class="p">:</span> <span class="kt"><a href="../Classes/BeaconScanner/ScanningState.html">ScanningState</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">idle</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">scanningState</span><span class="p">:</span> <span class="kt">BeaconScanner</span><span class="o">.</span><span class="kt"><a href="../Classes/BeaconScanner/ScanningState.html">ScanningState</a></span></code></pre>
 
                         </div>
                       </div>
@@ -466,8 +466,8 @@ This property will be overriden by direct call <code>startMonitoringBeacons(regi
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
