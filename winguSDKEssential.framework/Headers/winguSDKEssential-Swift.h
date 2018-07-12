@@ -349,10 +349,14 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+
+
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -520,6 +524,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 
 
 
+
+
 /// CouponComponent works with <code>Barcode</code> to provide reach experience. It may look like this:
 /// <img src="../docs_assets/CouponComponent.png" alt="Coupon Component"/></br>
 /// Barcode generation happen on OS level using <code>Machine Readable Object Types</code> such as EAN-13. To learn more visit <a href="https://developer.apple.com/documentation/avfoundation/avmetadataobject.objecttype/1618807-ean13">Official Apple Documentation</a>
@@ -554,12 +560,16 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 
 
 
+
+
 /// Collection of files added in wingu portal.
 SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 @interface FileComponent : Component
 /// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -604,6 +614,16 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 
 
+@interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
 
 
 /// Scanner for geofences. It shared some behaviours from <code>BeaconScanner</code> whenever it makes sense.<br/>
@@ -631,6 +651,22 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 /// Contains information about image before download
 SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 @interface ImageMetadata : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+/// As a part of analytics interaction is a representation of single event happen in <code>Channel</code> or <code>Content</code>.<br/>
+/// It’s automatically triggered by this library or Content library.<br/>
+/// <blockquote>
+/// <em>Note:</em> Use this class only with disabled automatic sending in <code>WinguAnalytics</code> class.
+///
+/// </blockquote>
+SWIFT_CLASS("_TtC17winguSDKEssential11Interaction")
+@interface Interaction : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -682,7 +718,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential20NotificationsManager")
 @class UNUserNotificationCenter;
 @class UNNotification;
 
-SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface NotificationsManager (SWIFT_EXTENSION(winguSDKEssential)) <UNUserNotificationCenterDelegate>
 /// :nodoc:
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
@@ -822,6 +857,18 @@ SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
 
 
 
+/// Analytics configuration may happen here.<br/>
+/// <blockquote>
+/// <em>Note</em>: You should disable automatic data gathering if you want to use custom events with <code>Interaction</code> class<br/>
+///
+/// </blockquote>
+/// By default wingu will gather analytics, they can be reviewed in wingu portal.
+SWIFT_CLASS("_TtC17winguSDKEssential14WinguAnalytics")
+@interface WinguAnalytics : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Single file object associated with <code>FileComponent</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
 @interface WinguFile : NSObject
@@ -899,6 +946,15 @@ SWIFT_PROTOCOL("_TtP17winguSDKEssential22WinguLocationsDelegate_")
 /// \param channel updated channel
 ///
 - (void)updatePhysicalInfo:(Channel * _Nonnull)channel;
+/// Some of the channels did change physical characteristics<br/>
+/// If channels has some custom sorting or filtering this should be invoked in this place.<br/>
+/// func <code>updatePhysicalInfo(:)</code> will provide more details of objects that changed.
+/// <blockquote>
+/// <em>Note</em> This is a direct callback from <code>CoreLocation</code> method for beacons ranging. It may be called very often depends on your settings.<br/>
+///
+/// </blockquote>
+/// Example: If currently in range is one region this method will get called every second (the same as CoreLocation native). If there is two ranged regions this callback will get called twice in second.<br/>
+- (void)updatePhysical;
 @end
 
 #if __has_attribute(external_source_symbol)

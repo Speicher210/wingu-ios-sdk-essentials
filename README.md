@@ -109,7 +109,7 @@ See example project to learn more.
 <a name="full_documentation"></a>
 ## Documentation
 
-Documentation is available [here](docs/index.html) or through your IDE.
+Documentation is available [here](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/) or through your IDE.
 
 <a name="license"></a>
 ## License
