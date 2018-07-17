@@ -3,7 +3,7 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
-
+- [0.4.1](#0.4.1)
 - [0.4.0](#0.4.0)
 
 #### 0.3.x Releases
@@ -13,6 +13,13 @@
 - [0.3.0](#0.3.0)
 
 --
+
+## [0.4.1](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.1)
+
+###### API version 0.12
+
+#### Added
+- `NotificationsManager` gain ability to not send wingu notifications. It can be used with custom notifications or to disable them completely. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/NotificationsManager.html)
 
 ## [0.4.0](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.0)
 
