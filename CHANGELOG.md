@@ -3,7 +3,8 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
-- [0.4.1](#0.4.2)
+- [0.4.2](#0.4.3)
+- [0.4.2](#0.4.2)
 - [0.4.1](#0.4.1)
 - [0.4.0](#0.4.0)
 
@@ -14,6 +15,11 @@
 - [0.3.0](#0.3.0)
 
 --
+
+## [0.4.3](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.3)
+
+#### Added
+- variable `notifiedDate` is now `public` in `Channel`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html)
 
 ## [0.4.2](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.2)
 
