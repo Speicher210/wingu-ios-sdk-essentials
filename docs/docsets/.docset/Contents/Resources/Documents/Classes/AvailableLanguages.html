@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AudioMedia Class Reference</title>
+    <title>AvailableLanguages Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/AudioMedia" class="dashAnchor"></a>
-    <a title="AudioMedia Class Reference"></a>
+    <a name="//apple_ref/swift/Class/AvailableLanguages" class="dashAnchor"></a>
+    <a title="AvailableLanguages Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        AudioMedia Class Reference
+        AvailableLanguages Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -272,15 +272,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>AudioMedia</h1>
+            <h1>AvailableLanguages</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AudioMedia</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AvailableLanguages</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
-            <p>Describes information about media inside <code><a href="../Classes/AudioPlaylistComponent.html">AudioPlaylistComponent</a></code><br/>
-By default it&rsquo;s mp3 files and some parameters (ex. <code>album</code>) is based on mp3 tags. Some of them are fetched from wingu portal (ex. <code>name</code>)</p>
+            <p>Representation of available languages for content.</p>
 
           </section>
           <section class="section task-group-section">
@@ -289,9 +288,9 @@ By default it&rsquo;s mp3 files and some parameters (ex. <code>album</code>) is 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC3uIDSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/uID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC3uIDSSSgvp">uID</a>
+                    <a name="/s:17winguSDKEssential18AvailableLanguagesC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential18AvailableLanguagesC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -299,14 +298,14 @@ By default it&rsquo;s mp3 files and some parameters (ex. <code>album</code>) is 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unique object identifier</p>
+                        <p>Shared instance.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">AvailableLanguages</span> <span class="o">=</span></code></pre>
 
                         </div>
                       </div>
@@ -316,9 +315,9 @@ By default it&rsquo;s mp3 files and some parameters (ex. <code>album</code>) is 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC8positionSiSgvp"></a>
-                    <a name="//apple_ref/swift/Property/position" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC8positionSiSgvp">position</a>
+                    <a name="/s:17winguSDKEssential18AvailableLanguagesC9languagesSayAA10PackLocaleCGvp"></a>
+                    <a name="//apple_ref/swift/Property/languages" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential18AvailableLanguagesC9languagesSayAA10PackLocaleCGvp">languages</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -326,123 +325,14 @@ By default it&rsquo;s mp3 files and some parameters (ex. <code>album</code>) is 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Since <code>AudioMedia</code> are strongly connected to <code><a href="../Classes/AudioPlaylistComponent.html">AudioPlaylistComponent</a></code> this parameters define position inside playlist.<br/>
-It will be returned by default already sorted, but if any manipulations of entire deck or component has been made this is a good reference point to get back media in order.</p>
+                        <p>Collection of languages in order.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">position</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC4nameSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC4nameSSSgvp">name</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Name of the track defines in wingu portal</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC6lenghtSdSgvp"></a>
-                    <a name="//apple_ref/swift/Property/lenght" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC6lenghtSdSgvp">lenght</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Lenght of the track</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lenght</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC5albumAA0C5AlbumCSgvp"></a>
-                    <a name="//apple_ref/swift/Property/album" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC5albumAA0C5AlbumCSgvp">album</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Album fetched from mp3 tags, you cannot change it in the portal, modify mp3 tags and reupload to wingu portal if any changes of this are required</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">album</span><span class="p">:</span> <span class="kt"><a href="../Classes/AudioAlbum.html">AudioAlbum</a></span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential10AudioMediaC7fileURLSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/fileURL" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential10AudioMediaC7fileURLSSSgvp">fileURL</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Plain URL value of reference mp3 file</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fileURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">languages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/PackLocale.html">PackLocale</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>

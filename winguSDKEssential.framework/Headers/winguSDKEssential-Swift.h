@@ -208,6 +208,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential15ActionComponent")
 
 
 
+@interface ActionComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ActionComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -223,6 +227,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Address")
 
 
 
+@interface Address (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Address * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Contains information about image and it’s alignment.
@@ -234,6 +242,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential14AlignmentImage")
 
 
 
+@interface AlignmentImage (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (AlignmentImage * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Contains information about text alignment.
@@ -245,6 +257,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential13AlignmentText")
 
 
 
+@interface AlignmentText (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (AlignmentText * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Contains information about album that is associated with mp3 file imported to wingu portal.<br>
@@ -257,6 +273,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential10AudioAlbum")
 
 
 
+@interface AudioAlbum (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (AudioAlbum * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Describes information about media inside <code>AudioPlaylistComponent</code><br/>
@@ -269,6 +289,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential10AudioMedia")
 
 
 
+@interface AudioMedia (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (AudioMedia * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Match Audio Component configurable in wingu portal. <br/>
@@ -283,6 +307,22 @@ SWIFT_CLASS("_TtC17winguSDKEssential22AudioPlaylistComponent")
 
 
 
+@interface AudioPlaylistComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (AudioPlaylistComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
+/// Representation of available languages for content.
+SWIFT_CLASS("_TtC17winguSDKEssential18AvailableLanguages")
+@interface AvailableLanguages : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
 
 
 
@@ -298,6 +338,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential10Background")
 
 
 
+@interface Background (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Background * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Typically associated with CouponComponent object. Represent barcode that can be scanned using other readers.
@@ -309,6 +353,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Barcode")
 
 
 
+@interface Barcode (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Barcode * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Base representation of some wingu trigger configured in portal. All detailed triggers like <code>Geofence</code> or <code>Beacon</code> will inherit from this class.<br/>
@@ -347,14 +395,18 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 
@@ -386,6 +438,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
+@interface Boundary (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Boundary * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
@@ -399,6 +455,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential17BrandBarComponent")
 
 
 
+@interface BrandBarComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (BrandBarComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -421,6 +481,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential12CMSComponent")
 
 
 
+@interface CMSComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (CMSComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -432,6 +496,27 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 @interface Card : NSObject
 /// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface Card (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Card * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
+
+
+
+@interface Channel (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Channel * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -450,19 +535,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@interface Component (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// It is a representation of info card in wingu portal. It may look like this:<br/>
@@ -482,6 +558,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential16ContactComponent")
 
 
 
+@interface ContactComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ContactComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -498,6 +578,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential23ContactComponentAddress")
 
 
 
+@interface ContactComponentAddress (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ContactComponentAddress * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Social Media references. In Contacts apps there are facebook, twitter and yelp already natively supported. Google + will be transfered to plain texts or skipped, since there is no support for it in OS level.
@@ -509,6 +593,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential18ContactSocialMedia")
 
 
 
+@interface ContactSocialMedia (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ContactSocialMedia * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Contains informations about components configured in wingu portal and languages that it’s available.
@@ -525,6 +613,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 
 
 
+@interface Content (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Content * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -542,6 +634,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 
 
 
+@interface CouponComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (CouponComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -561,6 +657,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 
 
 
+@interface Deck (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Deck * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -575,6 +675,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 
 
 
+@interface FileComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (FileComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -596,6 +700,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential16GalleryComponent")
 
 
 
+@interface GalleryComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (GalleryComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -615,11 +723,15 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 
 
+@interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -647,6 +759,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
+@interface Image (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Image * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -660,6 +776,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 
 
 
+@interface ImageMetadata (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ImageMetadata * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// As a part of analytics interaction is a representation of single event happen in <code>Channel</code> or <code>Content</code>.<br/>
@@ -687,6 +807,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Location")
 
 
 
+@interface Location (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Location * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Location Component is a representation of wingu portal Map.<br/>
@@ -697,6 +821,28 @@ SWIFT_CLASS("_TtC17winguSDKEssential17LocationComponent")
 /// :nodoc:
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+@interface LocationComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (LocationComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
+/// :nodoc:
+SWIFT_CLASS("_TtC17winguSDKEssential14NetworkManager")
+@interface NetworkManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
 
 
 
@@ -739,6 +885,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Pack")
 
 
 
+@interface Pack (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Pack * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Usually associated with a <code>Deck</code> and contains information about language of the <code>Deck</code>.
@@ -750,6 +900,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 
 
 
+@interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Contain information about deck arrangement.
@@ -761,6 +915,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Position")
 
 
 
+@interface Position (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Position * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Representation of rating from wingu portal.<br/>
@@ -774,6 +932,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 
 
 
+@interface RatingComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (RatingComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -792,6 +954,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential18SeparatorComponent")
 
 
 
+@interface SeparatorComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (SeparatorComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -809,6 +975,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential21SurveyMonkeyComponent")
 
 
 
+@interface SurveyMonkeyComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (SurveyMonkeyComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -838,6 +1008,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential14VideoComponent")
 
 
 
+@interface VideoComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (VideoComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -857,6 +1031,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
 
 
 
+@interface WebhookComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (WebhookComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -886,6 +1064,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
 
 
 
+@interface WinguFile (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (WinguFile * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Wrap <code>Image</code> object to provide necessery information about picture before start download.<br/>
@@ -898,6 +1080,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential10WinguImage")
 
 
 
+@interface WinguImage (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (WinguImage * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Use <code>WinguLocations</code> to manage all triggers and locations inside wingu platform.<br/>
