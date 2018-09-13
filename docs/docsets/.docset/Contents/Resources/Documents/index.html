@@ -4,305 +4,490 @@
     <title>  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
+
+
     <a title="  Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (100% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html"> Reference</a>
-        <img id="carat" src="img/carat.png" />
-          Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+           Docs
+        </a>
+         (100% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/wingu-GmbH/wingu-ios-sdk-essentials">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html"> Reference</a>
+      <img class="carat" src="img/carat.png" />
+        Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="Scanners.html">Scanners</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/ActionComponent.html">ActionComponent</a>
+                <a class="nav-group-task-link" href="Classes/WinguLocations.html">WinguLocations</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ActionComponent/ActionType.html">– ActionType</a>
+                <a class="nav-group-task-link" href="Classes/BeaconScanner.html">BeaconScanner</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/Address.html">Address</a>
+                <a class="nav-group-task-link" href="Classes/BeaconScanner/ScanningState.html">– ScanningState</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/AlignmentImage.html">AlignmentImage</a>
+                <a class="nav-group-task-link" href="Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/AlignmentText.html">AlignmentText</a>
+                <a class="nav-group-task-link" href="Classes/GeofenceScanner.html">GeofenceScanner</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/AudioAlbum.html">AudioAlbum</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AudioMedia.html">AudioMedia</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AudioPlaylistComponent.html">AudioPlaylistComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/AvailableLanguages.html">AvailableLanguages</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Background.html">Background</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Barcode.html">Barcode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Barcode/BarcodeType.html">– BarcodeType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Beacon.html">Beacon</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Beacon/InRangeType.html">– InRangeType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BeaconScanner.html">BeaconScanner</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BeaconScanner/ScanningState.html">– ScanningState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Boundary.html">Boundary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Boundary/BoundaryType.html">– BoundaryType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/BrandBarComponent.html">BrandBarComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/CMSComponent.html">CMSComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/CMSComponent/CMSType.html">– CMSType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Card.html">Card</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Channel.html">Channel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Component.html">Component</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ContactComponent.html">ContactComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ContactComponentAddress.html">ContactComponentAddress</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ContactSocialMedia.html">ContactSocialMedia</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Content.html">Content</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/CouponComponent.html">CouponComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Deck.html">Deck</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/FileComponent.html">FileComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/GalleryComponent.html">GalleryComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Geofence.html">Geofence</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/GeofenceScanner.html">GeofenceScanner</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Image.html">Image</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Image/ImageType.html">– ImageType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ImageMetadata.html">ImageMetadata</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/ImageMetadata/ImageFormat.html">– ImageFormat</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Interaction.html">Interaction</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Interaction/Kind.html">– Kind</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Location.html">Location</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/LocationComponent.html">LocationComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/NotificationsManager.html">NotificationsManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Pack.html">Pack</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/PackLocale.html">PackLocale</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/Position.html">Position</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/RatingComponent.html">RatingComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SeparatorComponent.html">SeparatorComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SeparatorComponent/SeparatorType.html">– SeparatorType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/SurveyMonkeyComponent.html">SurveyMonkeyComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/VideoComponent.html">VideoComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/VideoComponent/VideoType.html">– VideoType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/WebhookComponent.html">WebhookComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/WinguAnalytics.html">WinguAnalytics</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/WinguFile.html">WinguFile</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/WinguImage.html">WinguImage</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Classes/WinguLocations.html">WinguLocations</a>
+                <a class="nav-group-task-link" href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Enums.html">Enumerations</a>
+            <a class="nav-group-name-link" href="Components.html">Components</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/AlignmentType.html">AlignmentType</a>
+                <a class="nav-group-task-link" href="Classes/ActionComponent.html">ActionComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ActionComponent/ActionType.html">– ActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AudioPlaylistComponent.html">AudioPlaylistComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/BrandBarComponent.html">BrandBarComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CMSComponent.html">CMSComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CMSComponent/CMSType.html">– CMSType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ContactComponent.html">ContactComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CouponComponent.html">CouponComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FileComponent.html">FileComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormComponent.html">FormComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/GalleryComponent.html">GalleryComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LocationComponent.html">LocationComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/RatingComponent.html">RatingComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SeparatorComponent.html">SeparatorComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SeparatorComponent/SeparatorType.html">– SeparatorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SurveyMonkeyComponent.html">SurveyMonkeyComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/VideoComponent.html">VideoComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/VideoComponent/VideoType.html">– VideoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WebhookComponent.html">WebhookComponent</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="Channel Elements.html">Channel Elements</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/RediscoverNotificationTime.html">RediscoverNotificationTime</a>
+                <a class="nav-group-task-link" href="Classes/Channel.html">Channel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/UNNotificationAction.html">UNNotificationAction</a>
+                <a class="nav-group-task-link" href="Classes/Geofence.html">Geofence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Beacon.html">Beacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Beacon/InRangeType.html">– InRangeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Content.html">Content</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Pack.html">Pack</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Deck.html">Deck</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Card.html">Card</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Component.html">Component</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Protocols.html">Protocols</a>
+            <a class="nav-group-name-link" href="Analytics.html">Analytics</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
+                <a class="nav-group-task-link" href="Classes/WinguAnalytics.html">WinguAnalytics</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
+                <a class="nav-group-task-link" href="Classes/Interaction.html">Interaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Interaction/Kind.html">– Kind</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Structs.html">Structures</a>
+            <a class="nav-group-name-link" href="Notifications.html">Notifications</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/Logger.html">Logger</a>
+                <a class="nav-group-task-link" href="Classes/NotificationsManager.html">NotificationsManager</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Logger/LoggingLevel.html">– LoggingLevel</a>
+                <a class="nav-group-task-link" href="Extensions/UNNotificationAction.html">UNNotificationAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Typealiases.html">Type Aliases</a>
+            <a class="nav-group-name-link" href="Type Aliases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:17winguSDKEssential19BeaconFetchDataTimea">BeaconFetchDataTime</a>
+                <a class="nav-group-task-link" href="Type Aliases.html#/s:17winguSDKEssential19BeaconFetchDataTimea">BeaconFetchDataTime</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:17winguSDKEssential14BeaconLostTimea">BeaconLostTime</a>
+                <a class="nav-group-task-link" href="Type Aliases.html#/s:17winguSDKEssential14BeaconLostTimea">BeaconLostTime</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:17winguSDKEssential22GeofenceAccuracyOffseta">GeofenceAccuracyOffset</a>
+                <a class="nav-group-task-link" href="Type Aliases.html#/s:17winguSDKEssential22GeofenceAccuracyOffseta">GeofenceAccuracyOffset</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:17winguSDKEssential16GeofenceLostTimea">GeofenceLostTime</a>
+                <a class="nav-group-task-link" href="Type Aliases.html#/s:17winguSDKEssential16GeofenceLostTimea">GeofenceLostTime</a>
               </li>
               <li class="nav-group-task">
-                <a href="Typealiases.html#/s:17winguSDKEssential26RediscoverNotificationTimea">RediscoverNotificationTime</a>
+                <a class="nav-group-task-link" href="Type Aliases.html#/s:17winguSDKEssential26RediscoverNotificationTimea">RediscoverNotificationTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/RediscoverNotificationTime.html">RediscoverNotificationTime</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Errors.html">Errors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/FormComponentError.html">FormComponentError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Development Tools.html">Development Tools</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/Logger/LoggingLevel.html">– LoggingLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Brand Bar Component.html">Brand Bar Component</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AlignmentImage.html">AlignmentImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AlignmentText.html">AlignmentText</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/AlignmentType.html">AlignmentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Background.html">Background</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Music Component.html">Music Component</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AudioAlbum.html">AudioAlbum</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AudioMedia.html">AudioMedia</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Form Component.html">Form Component</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormAnswer.html">FormAnswer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormAnswer/FormAnswerType.html">– FormAnswerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormElement.html">FormElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormElement/FormInputType.html">– FormInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormElement/FormDiscriminator.html">– FormDiscriminator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormResubmit.html">FormResubmit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/FormSelectOption.html">FormSelectOption</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Contact Component.html">Contact Component</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ContactComponentAddress.html">ContactComponentAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ContactSocialMedia.html">ContactSocialMedia</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Image Manager.html">Image Manager</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Image/ImageType.html">– ImageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImageMetadata.html">ImageMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ImageMetadata/ImageFormat.html">– ImageFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WinguImage.html">WinguImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Barcode.html">Barcode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Barcode/BarcodeType.html">– BarcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Boundary.html">Boundary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Boundary/BoundaryType.html">– BoundaryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PackLocale.html">PackLocale</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Position.html">Position</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WinguFile.html">WinguFile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/AvailableLanguages.html">AvailableLanguages</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content">
             
-            <h1 id='wingusdk-essential' class='heading'>winguSDK-Essential</h1>
-<h3 id='required-tools' class='heading'>Required tools</h3>
+            <h1 id='wingu-ios-sdk-essentials' class='heading'>wingu-ios-sdk-essentials</h1>
+
+<p><a href="https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/"><img src="https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/badge.svg" alt="Documentation"></a>
+<a href="http://cocoapods.org/pods/wingu-ios-sdk-essentials"><img src="https://img.shields.io/cocoapods/p/wingu-ios-sdk-essentials.svg?style=flat" alt="Platform"></a>
+<a href="http://cocoapods.org/pods/wingu-ios-sdk-essentials"><img src="https://img.shields.io/cocoapods/l/wingu-ios-sdk-essentials.svg?style=flat" alt="License"></a>
+<a href="http://cocoapods.org/pods/wingu-ios-sdk-essentials"><img src="https://img.shields.io/cocoapods/v/wingu-ios-sdk-essentials.svg?style=flat" alt="Version"></a></p>
+
+<p>wingu sdk essentials is an iOS SDK for managing triggers configured at <a href="https://wingu.de">wingu</a>. It will range beacons and find geofences already with content attached. </p>
+
+<p>wingu essentials is delivered to you in pre-compiled form <code>.framework</code>. It&rsquo;s written in Swift 4.1 </p>
+<h1 id='table-of-contents' class='heading'>Table of Contents</h1>
 
 <ol>
-<li><a href="https://brew.sh/index_pl.html">Homebrew</a> - The missing package manager for macOS</li>
-<li><a href="https://github.com/realm/jazzy">Jazzy</a> - Soulful docs for Swift &amp; Objective-C</li>
-<li><a href="https://github.com/realm/SwiftLint">SwiftLint</a> - A tool to enforce Swift style and conventions.</li>
-<li><a href="https://github.com/krzysztofzablocki/Sourcery">Sourcery</a> - Code generator for Swift language, built on top of Apple&rsquo;s own SourceKit.</li>
-<li><a href="https://github.com/kylef/Stencil">Stencil</a> - Simple and powerful template language for Swift.</li>
-<li><a href="https://github.com/SwiftGen/StencilSwiftKit">StencilSwiftKit</a> - A framework bringing additional nodes &amp; filters to Stencil dedicated to Swift code generation (build in in sourcery)</li>
+<li><a href="#installation">Installation</a>
+
+<ul>
+<li><a href="#cocoapods">Cocoapods</a></li>
+<li><a href="#carthage">Carthage</a></li>
+<li><a href="#manual_installation">Manual installation</a></li>
+</ul></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#quick_start">Quick start guide</a></li>
+<li><a href="#full_documentation">Documentation</a></li>
+<li><a href="#license">License</a></li>
 </ol>
-<h3 id='setup' class='heading'>Setup</h3>
 
-<p>To configure this project on the first time open directory and run:
-<code>cd winguSDKEssential/scripts &amp;&amp; sh setup.sh</code></p>
+<p><a name="installation"></a></p>
+<h2 id='installation' class='heading'>Installation</h2>
 
-<p>If you prefere doing it by hand checkout <code>setup.sh</code> content and do it step by step.</p>
-<h3 id='using-sourcery-in-wingusdk-essential-project' class='heading'>Using sourcery in winguSDK-Essential project.</h3>
+<p><a name="cocoapods"></a></p>
+<h3 id='cocoapods' class='heading'>Cocoapods</h3>
 
-<p>Visit document below to get to know all the annotations. If you add new annotation or modify stencil scripts please remember to update this document!</p>
+<p>wingu-ios-sdk-essentials is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'wingu-ios-sdk-essentials'</span>
+</code></pre>
 
-<p><a href="readme/SourceryAnnotations.md">winguSDKEssential Sourcery Annotation</a></p>
+<p><a name="carthage"></a></p>
+<h3 id='carthage' class='heading'>Carthage</h3>
 
-          </section>
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a simple, decentralized dependency manager for Cocoa. </p>
+<h4 id='no-build-option' class='heading'>no-build option</h4>
+
+<p>Add this dependency to your <code>Cartfile</code></p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"wingu-GmbH/wingu-ios-sdk-essentials"</span>
+</code></pre>
+
+<blockquote>
+<p><strong>Please Note</strong> this is pre-compiled .framework, so there is only need to fetch it using Carthage not build. Use <code>--no-build</code> option in carthage command (ex:  <code>carthage update --platform iOS --no-build</code>)</p>
+</blockquote>
+<h4 id='direct-link' class='heading'>Direct link</h4>
+
+<p>Version of library can be downloaded using <code>binary</code> option in <code>Cartfile</code>. Add this line to <code>Cartfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">binary</span> <span class="s2">"https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/wingu-ios-sdk-essentials.json"</span>
+</code></pre>
+
+<p><a name="manual_installation"></a></p>
+<h3 id='manual-installation' class='heading'>Manual Installation</h3>
+
+<p>Copy <code>winguSDKEssential.framework</code> file from this repository to your project.</p>
+
+<p><a name="requirements"></a></p>
+<h2 id='requirments' class='heading'>Requirments</h2>
+
+<p>There is a location permission needed to run an app and work with wingu channels. Add this keys into your <code>Info.plist</code> file:</p>
+<pre class="highlight plaintext"><code>NSLocationAlwaysAndWhenInUseUsageDescription
+NSLocationWhenInUseUsageDescription
+</code></pre>
+
+<p><a name="quick_start"></a></p>
+<h2 id='quick-start-guide' class='heading'>Quick start guide</h2>
+
+<p>This guide shows you how get triggers callbacks with default configuration. You can always have some custom parameters in scanners. For all available configuration please check our <a href="#full_documentation">full documentation</a>. Depends on a use case you may need <code>winguLocations</code> in only one model or in whole app.</p>
+
+<p>We recommend create a one instance of <code>winguLocations</code>:</p>
+<pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">winguLocations</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">winguLocations</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="kt">WinguLocations</span><span class="o">.</span><span class="n">shared</span>
+    <span class="n">winguLocations</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+    <span class="k">return</span> <span class="n">winguLocations</span>
+<span class="p">}()</span>
+</code></pre>
+
+<p>Your class should conform to protocol <code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> and there you will receive all delegate callbacks from wingu triggers </p>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">YourClass</span><span class="p">:</span> <span class="nf">WinguLocationsDelegate</span> <span class="p">{</span> <span class="p">}</span>
+</code></pre>
+
+<p><code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> requires only one method implemented to get triggers, but you can check <a href="#full_documentation">full documentation</a>. This required callback is:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">winguChannels</span><span class="p">(</span><span class="n">_</span> <span class="nv">channels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Channel</span><span class="p">])</span> <span class="p">{</span>
+    <span class="c1">// your code here</span>
+<span class="p">}</span>
+</code></pre>
+
+<p><code><a href="Classes/Channel.html">Channel</a></code> is default class for all wingu triggers. This method will return available list of channels in range and will also get called whenever some trigger are out of range or scanner found a new one.</p>
+
+<p>You can start ranging beacons by calling</p>
+<pre class="highlight swift"><code><span class="n">winguLocations</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+</code></pre>
+
+<p>See example project to learn more.</p>
+
+<p><a name="full_documentation"></a></p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Documentation is available <a href="https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/">here</a> or through your IDE.</p>
+
+<p><a name="license"></a></p>
+<h2 id='license' class='heading'>License</h2>
+
+<p><code>wingu-ios-sdk-essentials</code> is available under the Apache-2.0 license. See the LICENSE file for more info.</p>
+
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-08-24)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-09-13)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>

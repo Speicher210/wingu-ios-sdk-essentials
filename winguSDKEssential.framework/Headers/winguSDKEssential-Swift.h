@@ -395,12 +395,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+
+
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
@@ -687,6 +687,113 @@ SWIFT_CLASS("_TtC17winguSDKEssential13FileComponent")
 
 
 
+/// Answer for a question in <code>FormComponent</code>.
+SWIFT_CLASS("_TtC17winguSDKEssential10FormAnswer")
+@interface FormAnswer : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+/// Form/Survey component. Representation of component with a same name in wingu portal<br/>
+SWIFT_CLASS("_TtC17winguSDKEssential13FormComponent")
+@interface FormComponent : Component
+/// :nodoc:
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+@interface FormComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (FormComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface FormComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+
+
+
+
+
+
+/// Form component element. Available types:<br/>
+/// <ul>
+///   <li>
+///     Text<br/>
+///   </li>
+///   <li>
+///     Link<br/>
+///   </li>
+///   <li>
+///     Email<br/>
+///   </li>
+///   <li>
+///     Date/Time<br/>
+///   </li>
+///   <li>
+///     Dropdown<br/>
+///   </li>
+///   <li>
+///     Checkbox<br/>
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC17winguSDKEssential11FormElement")
+@interface FormElement : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
+
+@interface FormElement (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (FormElement * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Resubmit values from form component
+SWIFT_CLASS("_TtC17winguSDKEssential12FormResubmit")
+@interface FormResubmit : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface FormResubmit (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (FormResubmit * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Form select options. Only valid with selections
+SWIFT_CLASS("_TtC17winguSDKEssential16FormSelectOption")
+@interface FormSelectOption : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface FormSelectOption (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (FormSelectOption * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 /// Gallery Component contain both single images inline in text and multiple pictures.
@@ -853,9 +960,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential14NetworkManager")
 
 
 
-/// Allows you to receive <code>UILocalNotification</code> through wingu platform.<br/>
+
+
+/// Allows you to receive <code>Notifications</code> through wingu platform.<br/>
 /// <blockquote>
-/// <em>Note:</em> wingu not sending push notifications only <code>UILocalNotification</code> whenever near <code>Channel</code>. There is no need to configure Apple Developer Certificate to handle Push Notification when app does not support it.<br/>
+/// <em>Note:</em> wingu not sending push notifications only whenever near <code>Channel</code>. There is no need to configure Apple Developer Certificate to handle Push Notification when app does not support it.<br/>
+/// wingu SDK is using <code>UserNotifications</code> framework<br/>
 ///
 /// </blockquote>
 /// In order to receive notifications there might be different action required for different <code>Channel</code> type.<br/>

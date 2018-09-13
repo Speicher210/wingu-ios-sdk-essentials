@@ -1,8 +1,10 @@
 # wingu-ios-sdk-essentials
 
-[![Version](https://img.shields.io/cocoapods/v/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
-[![License](https://img.shields.io/cocoapods/l/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
+[![Documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/badge.svg)](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/)
 [![Platform](https://img.shields.io/cocoapods/p/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
+[![License](https://img.shields.io/cocoapods/l/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
+[![Version](https://img.shields.io/cocoapods/v/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
+
 
 wingu sdk essentials is an iOS SDK for managing triggers configured at [wingu](https://wingu.de). It will range beacons and find geofences already with content attached. 
 
@@ -76,9 +78,9 @@ We recommend create a one instance of `winguLocations`:
 
 ```swift
 lazy var winguLocations: WinguLocations = {
-	let winguLocations: WinguLocations = WinguLocations.shared
-	winguLocations.delegate = self
-	return winguLocations
+    let winguLocations: WinguLocations = WinguLocations.shared
+    winguLocations.delegate = self
+    return winguLocations
 }()
 ```
 
@@ -91,7 +93,7 @@ extension YourClass: WinguLocationsDelegate { }
 
 ```swift
 func winguChannels(_ channels: [Channel]) {
-	// your code here
+    // your code here
 }
 ```
 

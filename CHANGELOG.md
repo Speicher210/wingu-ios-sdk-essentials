@@ -3,6 +3,8 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
+- [0.4.6](#0.4.6)
+- [0.4.5](#0.4.5)
 - [0.4.4](#0.4.4)
 - [0.4.3](#0.4.3)
 - [0.4.2](#0.4.2)
@@ -16,18 +18,41 @@
 - [0.3.0](#0.3.0)
 
 --
+## [0.4.6](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.6)
 
-## [0.4.4](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.3)
+###### API version 0.12
+
+#### Added
+- Form component. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/FormComponent.html)
+- Documentation has now purpose-based structure rather than type-based
+
+#### Fixed
+- Whenever directory for writing was not open SDK may failed to store data persistently. Fixed.
+
+## [0.4.5](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.5)
+
+###### API version 0.12
+
+#### Added
+- Collection of content languages in `AvailableLanguages`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/AvailableLanguages.html)
+
+## [0.4.4](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.4)
+
+###### API version 0.12
 
 #### Fixed
 - fix issue when occasionally notification may be triggered with cached data 
 
 ## [0.4.3](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.3)
 
+###### API version 0.12
+
 #### Added
 - variable `notifiedDate` is now `public` in `Channel`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html)
 
 ## [0.4.2](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.2)
+
+###### API version 0.12
 
 #### Added
 - `Card` conform fully to `Codable`.
