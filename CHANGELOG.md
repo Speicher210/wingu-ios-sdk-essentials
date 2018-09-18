@@ -3,6 +3,7 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
+- [0.4.7](#0.4.7) Swift **4.2**
 - [0.4.6](#0.4.6)
 - [0.4.5](#0.4.5)
 - [0.4.4](#0.4.4)
@@ -18,6 +19,18 @@
 - [0.3.0](#0.3.0)
 
 --
+
+## [0.4.7](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.7)
+
+###### API version 0.12
+
+#### Changed
+- Library was compiled with Swift version **4.2**.
+
+
+> If you need to work with version **4.1.2** use versions [0.4.6](#0.4.6) or below.<br/>
+> Versions for Swift 4.1.x will not be supported anymore. Please update your project to the latest Swift version.
+
 ## [0.4.6](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.6)
 
 ###### API version 0.12
