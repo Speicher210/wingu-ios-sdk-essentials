@@ -3,12 +3,13 @@
 [![Documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/badge.svg)](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/)
 [![Platform](https://img.shields.io/cocoapods/p/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
 [![License](https://img.shields.io/cocoapods/l/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/wingu-ios-sdk-essentials.svg?style=flat)](http://cocoapods.org/pods/wingu-ios-sdk-essentials)
 
 
 wingu sdk essentials is an iOS SDK for managing triggers configured at [wingu](https://wingu.de). It will range beacons and find geofences already with content attached. 
 
-wingu essentials is delivered to you in pre-compiled form `.framework`. It's written in Swift 4.1 
+wingu essentials is delivered to you in pre-compiled form `.framework`. It's written in Swift 4.2
 
 
 # Table of Contents

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Boundary Class Reference</title>
+    <title>SeenChannels Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/Boundary" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/SeenChannels" class="dashAnchor"></a>
 
-    <a title="Boundary Class Reference"></a>
+    <a title="SeenChannels Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      Boundary Class Reference
+      SeenChannels Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -366,17 +366,16 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Boundary</h1>
+            <h1>SeenChannels</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Boundary</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeenChannels</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
-            <p>Associated with <code><a href="../Classes/Geofence.html">Geofence</a></code>. Contains values that descibe specyfic area created in wingu portal.<br/>
-Usually it&rsquo;s 5 coordinates in collection from SE to SW clockwise and close the shape.
-<img src="../docs_assets/Boundaries.gif" alt="Boundaries"></br>
-Check all available types in <code>BoundaryType</code> enum.</p>
+            <p>Channels that already has been visited. Works in companion to delegate method that returns only unseen channels in <code><a href="../Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code><br/>
+Visit <code><a href="../Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> for more information what <q>unseen</q> can mean.<br/>
+This works automatically from winguSDKContent.<br/></p>
 
           </div>
         </section>
@@ -388,9 +387,9 @@ Check all available types in <code>BoundaryType</code> enum.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential8BoundaryC0C4TypeO"></a>
-                    <a name="//apple_ref/swift/Enum/BoundaryType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential8BoundaryC0C4TypeO">BoundaryType</a>
+                    <a name="/s:17winguSDKEssential12SeenChannelsC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential12SeenChannelsC6sharedACvpZ">shared</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -398,15 +397,14 @@ Check all available types in <code>BoundaryType</code> enum.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents boundary type of collection of coordinates.</p>
+                        <p>Singleton instance.</p>
 
-                        <a href="../Classes/Boundary/BoundaryType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">BoundaryType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">SeenChannels</span></code></pre>
 
                         </div>
                       </div>
@@ -416,9 +414,9 @@ Check all available types in <code>BoundaryType</code> enum.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential8BoundaryC4typeAC0C4TypeOSgvp"></a>
-                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential8BoundaryC4typeAC0C4TypeOSgvp">type</a>
+                    <a name="/s:17winguSDKEssential12SeenChannelsC6appendyyAA7ChannelCSgF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential12SeenChannelsC6appendyyAA7ChannelCSgF">append(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -426,76 +424,39 @@ Check all available types in <code>BoundaryType</code> enum.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Type of Boundaries. Check <code><a href="../Classes/Boundary/BoundaryType.html">BoundaryType</a></code> enum to learn more.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Boundary</span><span class="o">.</span><span class="kt"><a href="../Classes/Boundary/BoundaryType.html">BoundaryType</a></span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential8BoundaryC11coordinatesSaySo22CLLocationCoordinate2DVGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/coordinates" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential8BoundaryC11coordinatesSaySo22CLLocationCoordinate2DVGSgvp">coordinates</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Collection of coordinates in order. Whenever this value will be set <code><a href="../Classes/Boundary.html#/s:17winguSDKEssential8BoundaryC16centerCoordinateSo22CLLocationCoordinate2DVSgvp">centerCoordinate</a></code> variable also needs to be refreshed. <br/></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17winguSDKEssential8BoundaryC16centerCoordinateSo22CLLocationCoordinate2DVSgvp"></a>
-                    <a name="//apple_ref/swift/Property/centerCoordinate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential8BoundaryC16centerCoordinateSo22CLLocationCoordinate2DVSgvp">centerCoordinate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Dynamically calculated variable based on <code>centerCoordinate</code> variable.</p>
+                        <p>Append seen channel. Visit <code><a href="../Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> for more information what <q>unseen</q> can mean.</p>
 
 <blockquote>
-<p><strong>Note:</strong> It&rsquo;s not recommended to set value manually.</p>
+<p><strong>Note</strong>: If there is winguSDKContent in use this is already implemented there. Shouldn&rsquo;t be called in this situation.<br/></p>
 </blockquote>
-
-<p>It&rsquo;s pointing out center coordinate inside Boundary. Calculation of this variable is needed to monitoring geofences in background.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">centerCoordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">channel</span><span class="p">:</span> <span class="kt"><a href="../Classes/Channel.html">Channel</a></span><span class="p">?)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>unseen channels.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

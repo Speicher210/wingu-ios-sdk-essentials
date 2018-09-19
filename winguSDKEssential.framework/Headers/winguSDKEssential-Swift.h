@@ -395,17 +395,17 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
-/// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -505,6 +505,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 /// :nodoc:
 + (Card * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -709,13 +711,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential13FormComponent")
 
 @interface FormComponent (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (FormComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface FormComponent (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (FormComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1052,6 +1054,20 @@ SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 
 
 
+/// Channels that already has been visited. Works in companion to delegate method that returns only unseen channels in <code>WinguLocationsDelegate</code><br/>
+/// Visit <code>WinguLocationsDelegate</code> for more information what “unseen” can mean.<br/>
+/// This works automatically from winguSDKContent.<br/>
+SWIFT_CLASS("_TtC17winguSDKEssential12SeenChannels")
+@interface SeenChannels : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+
+
+
+
 /// Representation of separator components in wingu portal.<br/>
 /// There is couple of styles of components to be picked, but all should be set in portal.<br/>
 /// Type here should be threated as read-only and shouldn’t be overriden.
@@ -1257,6 +1273,27 @@ SWIFT_PROTOCOL("_TtP17winguSDKEssential22WinguLocationsDelegate_")
 /// </blockquote>
 /// Example: If currently in range is one region this method will get called every second (the same as CoreLocation native). If there is two ranged regions this callback will get called twice in second.<br/>
 - (void)updatePhysical;
+/// Unseen collection of channels. If the end user never display content this will return collection of unseen, available regions in the area.<br/>
+/// <blockquote>
+/// <em>Note</em>: There is no point of using this method if only Essential part of SDK is used. This only works with winguSDKContent.<br/>
+///
+/// </blockquote>
+/// Viewing content is driven by some rules:<br/>
+/// <ul>
+///   <li>
+///     By view content action is understood by displaying wingu deck from winguSDKContent SDK<br/>
+///   </li>
+///   <li>
+///     Whenever content updates in portal channel is treated as new one. It’s based on <code>Content.lastSeen</code> variable.<br/>
+///   </li>
+///   <li>
+///     This is only valid for current locale. If language in portal was change for other language, this will not be returned here</br>
+///   </li>
+///   <li>
+///     Channel will be returned once per discovery, if there is a need to check physical information further use <code>updatePhysicalInfo(_:)</code> method<br/>
+///   </li>
+/// </ul>
+- (void)winguUnseenChannels:(NSArray<Channel *> * _Nonnull)channels;
 @end
 
 #if __has_attribute(external_source_symbol)
