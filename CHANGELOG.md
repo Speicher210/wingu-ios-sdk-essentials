@@ -3,6 +3,7 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
+- [0.4.9](#0.4.9)
 - [0.4.8](#0.4.8)
 - [0.4.7](#0.4.7) Swift **4.2**
 - [0.4.6](#0.4.6)
@@ -20,6 +21,13 @@
 - [0.3.0](#0.3.0)
 
 --
+
+## [0.4.9](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.9)
+
+###### API VERSION 0.12
+
+#### Fixed
+- Fixed issue with auto-dismissing controller whenever form component was filled incorrectly.
 
 ## [0.4.8](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.8)
 
