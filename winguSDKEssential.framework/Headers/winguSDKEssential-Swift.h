@@ -758,12 +758,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential11FormElement")
 
 
 
-
-
 @interface FormElement (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (FormElement * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 /// Resubmit values from form component
