@@ -14,7 +14,6 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Other Classes" class="dashAnchor"></a>
 
     <a title="Other Classes  Reference"></a>
 
@@ -360,6 +359,20 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Other Classes.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -367,7 +380,8 @@
         <section class="section">
           <div class="section-content">
             <h1>Other Classes</h1>
-            
+            <p>The following classes are available globally.</p>
+
           </div>
         </section>
 
@@ -378,9 +392,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)Address"></a>
-                    <a name="//apple_ref/swift/Class/Address" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)Address">Address</a>
+                    <a name="/c:@M@winguSDKEssential@objc(cs)DwellInteraction"></a>
+                    <a name="//apple_ref/swift/Class/DwellInteraction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)DwellInteraction">DwellInteraction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -388,15 +402,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Contain informations about address in readable format. Usually associated with <code><a href="Classes/Location.html">Location</a></code> object.</p>
+                        <p>Dwell provide information of time spend in <code><a href="Classes/Channel.html">Channel</a></code> area. Dwell is period of time thus <code>startInteraction</code> and <code>end</code> is needed.</p>
 
-                        <a href="Classes/Address.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/DwellInteraction.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Address</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DwellInteraction</span><span class="p">:</span> <span class="kt"><a href="Classes/Interaction.html">Interaction</a></span></code></pre>
 
                         </div>
                       </div>
@@ -410,9 +424,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)AvailableLanguages"></a>
-                    <a name="//apple_ref/swift/Class/AvailableLanguages" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)AvailableLanguages">AvailableLanguages</a>
+                    <a name="/c:@M@winguSDKEssential@objc(cs)ViewInteraction"></a>
+                    <a name="//apple_ref/swift/Class/ViewInteraction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)ViewInteraction">ViewInteraction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -420,15 +434,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Representation of available languages for content.</p>
+                        <p>View is representation of time spend by user on the deck. View is period of time thus <code>startInteraction</code> and <code>end</code> is needed.</p>
 
-                        <a href="Classes/AvailableLanguages.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ViewInteraction.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AvailableLanguages</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ViewInteraction</span><span class="p">:</span> <span class="kt"><a href="Classes/Interaction.html">Interaction</a></span></code></pre>
 
                         </div>
                       </div>
@@ -442,9 +456,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)Barcode"></a>
-                    <a name="//apple_ref/swift/Class/Barcode" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)Barcode">Barcode</a>
+                    <a name="/c:@M@winguSDKEssential@objc(cs)EnterInteraction"></a>
+                    <a name="//apple_ref/swift/Class/EnterInteraction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -452,212 +466,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Typically associated with CouponComponent object. Represent barcode that can be scanned using other readers.</p>
+                        <p>Enter is an event of passing or entering the region of one of wingu <code><a href="Classes/Channel.html">Channel</a></code>. Enter is elemnetary event so only <code>startInteraction</code> is needed.</p>
 
-                        <a href="Classes/Barcode.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Barcode</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)Boundary"></a>
-                    <a name="//apple_ref/swift/Class/Boundary" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)Boundary">Boundary</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Associated with <code><a href="Classes/Geofence.html">Geofence</a></code>. Contains values that descibe specyfic area created in wingu portal.<br/>
-Usually it&rsquo;s 5 coordinates in collection from SE to SW clockwise and close the shape.
-<img src="../docs_assets/Boundaries.gif" alt="Boundaries"></br>
-Check all available types in <code>BoundaryType</code> enum.</p>
-
-                        <a href="Classes/Boundary.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Boundary</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)Location"></a>
-                    <a name="//apple_ref/swift/Class/Location" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)Location">Location</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Location of the channel. Usually connected to <code><a href="Classes/Channel.html">Channel</a></code> object and depends of channel type (<code><a href="Classes/Geofence.html">Geofence</a></code>, <code><a href="Classes/Beacon.html">Beacon</a></code>&hellip;). Please note that any of this fields can be <code>nil</code>.</p>
-
-                        <a href="Classes/Location.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Location</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)PackLocale"></a>
-                    <a name="//apple_ref/swift/Class/PackLocale" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)PackLocale">PackLocale</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Usually associated with a <code><a href="Classes/Deck.html">Deck</a></code> and contains information about language of the <code><a href="Classes/Deck.html">Deck</a></code>.</p>
-
-                        <a href="Classes/PackLocale.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PackLocale</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)Position"></a>
-                    <a name="//apple_ref/swift/Class/Position" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)Position">Position</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Contain information about deck arrangement.</p>
-
-                        <a href="Classes/Position.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Position</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)SeenChannels"></a>
-                    <a name="//apple_ref/swift/Class/SeenChannels" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)SeenChannels">SeenChannels</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Channels that already has been visited. Works in companion to delegate method that returns only unseen channels in <code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code><br/>
-Visit <code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> for more information what <q>unseen</q> can mean.<br/>
-This works automatically from winguSDKContent.<br/></p>
-
-                        <a href="Classes/SeenChannels.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeenChannels</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@winguSDKEssential@objc(cs)WinguFile"></a>
-                    <a name="//apple_ref/swift/Class/WinguFile" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@winguSDKEssential@objc(cs)WinguFile">WinguFile</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Single file object associated with <code><a href="Classes/FileComponent.html">FileComponent</a></code>.</p>
-
-                        <a href="Classes/WinguFile.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WinguFile</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">EnterInteraction</span><span class="p">:</span> <span class="kt"><a href="Classes/Interaction.html">Interaction</a></span></code></pre>
 
                         </div>
                       </div>
@@ -672,8 +488,8 @@ This works automatically from winguSDKContent.<br/></p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-09-24)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-16)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

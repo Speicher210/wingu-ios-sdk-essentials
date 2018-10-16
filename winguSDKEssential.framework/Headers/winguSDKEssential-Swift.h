@@ -397,16 +397,16 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -436,12 +436,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
-
-
 @interface Boundary (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Boundary * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 /// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
@@ -514,12 +514,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
-
-
 @interface Channel (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Channel * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -663,6 +663,43 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 /// :nodoc:
 + (Deck * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
+
+/// As a part of analytics interaction is a representation of single event happen in <code>Channel</code> or <code>Content</code>.<br/>
+/// It’s automatically triggered by this library or Content library.<br/>
+/// <blockquote>
+/// <em>Note:</em> Use this class only with disabled automatic sending in <code>WinguAnalytics</code> class.
+///
+/// </blockquote>
+SWIFT_CLASS("_TtC17winguSDKEssential11Interaction")
+@interface Interaction : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+/// Dwell provide information of time spend in <code>Channel</code> area. Dwell is period of time thus <code>startInteraction</code> and <code>end</code> is needed.
+SWIFT_CLASS("_TtC17winguSDKEssential16DwellInteraction")
+@interface DwellInteraction : Interaction
+@end
+
+
+
+
+
+
+
+
+/// Enter is an event of passing or entering the region of one of wingu <code>Channel</code>. Enter is elemnetary event so only <code>startInteraction</code> is needed.
+SWIFT_CLASS("_TtC17winguSDKEssential16EnterInteraction")
+@interface EnterInteraction : Interaction
+@end
+
+
+
+
 
 
 
@@ -834,13 +871,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -868,12 +905,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
+
+
 @interface Image (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Image * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 /// Contains information about image before download
@@ -890,17 +927,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential13ImageMetadata")
 + (ImageMetadata * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
-
-/// As a part of analytics interaction is a representation of single event happen in <code>Channel</code> or <code>Content</code>.<br/>
-/// It’s automatically triggered by this library or Content library.<br/>
-/// <blockquote>
-/// <em>Note:</em> Use this class only with disabled automatic sending in <code>WinguAnalytics</code> class.
-///
-/// </blockquote>
-SWIFT_CLASS("_TtC17winguSDKEssential11Interaction")
-@interface Interaction : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
@@ -1144,6 +1170,18 @@ SWIFT_CLASS("_TtC17winguSDKEssential14VideoComponent")
 
 
 
+/// View is representation of time spend by user on the deck. View is period of time thus <code>startInteraction</code> and <code>end</code> is needed.
+SWIFT_CLASS("_TtC17winguSDKEssential15ViewInteraction")
+@interface ViewInteraction : Interaction
+@end
+
+
+
+
+
+
+
+
 /// Component that trigger third party action from connected website configured in wingu portal<br/>
 /// It connects automatically to API and trigger action.
 SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
@@ -1223,6 +1261,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
+
+
 
 
 

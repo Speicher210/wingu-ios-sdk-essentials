@@ -3,6 +3,7 @@
 > **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
 
 #### 0.4.x Releases
+- [0.4.11](#0.4.11)
 - [0.4.10](#0.4.10)
 - [0.4.9](#0.4.9)
 - [0.4.8](#0.4.8)
@@ -22,6 +23,18 @@
 - [0.3.0](#0.3.0)
 
 --
+
+## [0.4.11](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.11)
+
+###### API version 0.12
+
+#### Added
+- Add [EnterInteraction](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/EnterInteraction.html), [DwellInteraction](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/DwellInteraction.html) and [ViewInteraction](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/ViewInteraction.html) measurements that allows you to monitore enter action and record time spend in channel or deck.
+
+- Add `init` for [Interaction](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Interaction.html).
+
+#### Fixed
+- Fixed issue with sending empty `timespan`.
 
 ## [0.4.10](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.10)
 
