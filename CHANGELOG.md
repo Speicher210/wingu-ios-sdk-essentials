@@ -24,6 +24,13 @@
 
 --
 
+## [0.4.12](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.12)
+
+###### API version 0.12
+
+#### Fixed
+- Fixed issue with analytics data format.
+
 ## [0.4.11](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.11)
 
 ###### API version 0.12
