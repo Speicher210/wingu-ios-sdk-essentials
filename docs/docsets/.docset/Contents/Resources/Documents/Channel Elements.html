@@ -14,6 +14,7 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Channel Elements" class="dashAnchor"></a>
 
     <a title="Channel Elements  Reference"></a>
 
@@ -65,10 +66,30 @@
                 <a class="nav-group-task-link" href="Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/GeofenceScanner.html">GeofenceScanner</a>
+                <a class="nav-group-task-link" href="Scanners.html#/c:@M@winguSDKEssential@objc(cs)GeofenceScanner">GeofenceScanner</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration.html">WinguConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Analytics.html">– Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Geofences.html">– Geofences</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Notifications.html">– Notifications</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Beacons.html">– Beacons</a>
               </li>
             </ul>
           </li>
@@ -170,13 +191,19 @@
             <a class="nav-group-name-link" href="Analytics.html">Analytics</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/WinguAnalytics.html">WinguAnalytics</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction.html">Interaction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
               </li>
             </ul>
           </li>
@@ -191,6 +218,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions.html">PredefinedActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions/Option.html">– Option</a>
               </li>
             </ul>
           </li>
@@ -359,20 +392,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Classes.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -418,7 +437,7 @@ Detailed information about triggers can be found in class specific for every typ
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Channel</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Channel</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -451,7 +470,7 @@ In case of missing content in geofence by default it will not be shown in <code>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Geofence</span><span class="p">:</span> <span class="kt"><a href="Classes/Channel.html">Channel</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Geofence</span> <span class="p">:</span> <span class="kt"><a href="Classes/Channel.html">Channel</a></span></code></pre>
 
                         </div>
                       </div>
@@ -490,7 +509,7 @@ This class combines fetched arguments from wingu portal such as <code><a href="C
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Beacon</span><span class="p">:</span> <span class="kt"><a href="Classes/Channel.html">Channel</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Beacon</span> <span class="p">:</span> <span class="kt"><a href="Classes/Channel.html">Channel</a></span></code></pre>
 
                         </div>
                       </div>
@@ -528,7 +547,7 @@ This class combines fetched arguments from wingu portal such as <code><a href="C
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Content</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Content</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -560,7 +579,7 @@ This class combines fetched arguments from wingu portal such as <code><a href="C
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Pack</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Pack</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -592,7 +611,7 @@ This class combines fetched arguments from wingu portal such as <code><a href="C
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Deck</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Deck</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -624,7 +643,7 @@ This class combines fetched arguments from wingu portal such as <code><a href="C
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Card</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">Card</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -657,7 +676,7 @@ The base <code>Component</code> object shouldn&rsquo;t be used or created direct
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Component</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Component</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -672,8 +691,8 @@ The base <code>Component</code> object shouldn&rsquo;t be used or created direct
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-18)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

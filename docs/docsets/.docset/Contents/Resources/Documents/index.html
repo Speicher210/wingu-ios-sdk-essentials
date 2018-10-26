@@ -65,10 +65,30 @@
                 <a class="nav-group-task-link" href="Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/GeofenceScanner.html">GeofenceScanner</a>
+                <a class="nav-group-task-link" href="Scanners.html#/c:@M@winguSDKEssential@objc(cs)GeofenceScanner">GeofenceScanner</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration.html">WinguConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Analytics.html">– Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Geofences.html">– Geofences</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Notifications.html">– Notifications</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Beacons.html">– Beacons</a>
               </li>
             </ul>
           </li>
@@ -170,13 +190,19 @@
             <a class="nav-group-name-link" href="Analytics.html">Analytics</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/WinguAnalytics.html">WinguAnalytics</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction.html">Interaction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
               </li>
             </ul>
           </li>
@@ -191,6 +217,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions.html">PredefinedActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions/Option.html">– Option</a>
               </li>
             </ul>
           </li>
@@ -359,20 +391,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Classes.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -456,30 +474,36 @@ NSLocationWhenInUseUsageDescription
 <p>This guide shows you how get triggers callbacks with default configuration. You can always have some custom parameters in scanners. For all available configuration please check our <a href="#full_documentation">full documentation</a>. Depends on a use case you may need <code>winguLocations</code> in only one model or in whole app.</p>
 
 <p>We recommend create a one instance of <code>winguLocations</code>:</p>
-<pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">winguLocations</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="k">let</span> <span class="nv">winguLocations</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="kt">WinguLocations</span><span class="o">.</span><span class="n">shared</span>
-    <span class="n">winguLocations</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
-    <span class="k">return</span> <span class="n">winguLocations</span>
+<pre class="highlight swift"><code><span class="kd">lazy</span> <span class="k">var</span> <span class="nv">wingu</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">wingu</span><span class="p">:</span> <span class="kt">WinguLocations</span> <span class="o">=</span> <span class="nf">WinguLocations</span><span class="p">(</span><span class="nv">configuration</span><span class="p">:</span> <span class="kt">WinguConfiguration</span><span class="o">.</span><span class="n">defaultConfiguration</span><span class="p">)</span>
+    <span class="n">wingu</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+    <span class="k">return</span> <span class="n">wingu</span>
 <span class="p">}()</span>
 </code></pre>
 
 <p>Your class should conform to protocol <code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> and there you will receive all delegate callbacks from wingu triggers </p>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">YourClass</span><span class="p">:</span> <span class="nf">WinguLocationsDelegate</span> <span class="p">{</span> <span class="p">}</span>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">YourClass</span><span class="p">:</span> <span class="nf">WinguLocationsDelegate</span> <span class="p">{</span> 
+    <span class="kd">func</span> <span class="nf">winguChannels</span><span class="p">(</span><span class="n">_</span> <span class="nv">channels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Channel</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// your code here</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre>
 
 <p><code><a href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a></code> requires only one method implemented to get triggers, but you can check <a href="#full_documentation">full documentation</a>. This required callback is:</p>
-<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">winguChannels</span><span class="p">(</span><span class="n">_</span> <span class="nv">channels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Channel</span><span class="p">])</span> <span class="p">{</span>
-    <span class="c1">// your code here</span>
-<span class="p">}</span>
-</code></pre>
 
 <p><code><a href="Classes/Channel.html">Channel</a></code> is default class for all wingu triggers. This method will return available list of channels in range and will also get called whenever some trigger are out of range or scanner found a new one.</p>
 
 <p>You can start ranging beacons by calling</p>
-<pre class="highlight swift"><code><span class="n">winguLocations</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+<pre class="highlight swift"><code><span class="n">wingu</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
 </code></pre>
 
 <p>See example project to learn more.</p>
+
+<blockquote>
+<p>The quickest way to get started is to use above code in your project. Demo <code>apiKey</code> is already there. If you want to start receiving geofences just select <code>San Francisco, CA, USA</code> from predefined locations in Xcode and you&rsquo;ll get content attached to default configuration.</p>
+</blockquote>
+
+<p><img src="https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/docs/docs_assets/sfXcode.gif" alt="alt text" title="San Francisco, CA, USA"></p>
 
 <p><a name="full_documentation"></a></p>
 <h2 id='documentation' class='heading'>Documentation</h2>
@@ -498,8 +522,8 @@ NSLocationWhenInUseUsageDescription
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-18)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

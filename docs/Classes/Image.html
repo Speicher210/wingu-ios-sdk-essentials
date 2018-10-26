@@ -66,10 +66,30 @@
                 <a class="nav-group-task-link" href="../Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/GeofenceScanner.html">GeofenceScanner</a>
+                <a class="nav-group-task-link" href="../Scanners.html#/c:@M@winguSDKEssential@objc(cs)GeofenceScanner">GeofenceScanner</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WinguConfiguration.html">WinguConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WinguConfiguration/Analytics.html">– Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WinguConfiguration/Geofences.html">– Geofences</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WinguConfiguration/Notifications.html">– Notifications</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/WinguConfiguration/Beacons.html">– Beacons</a>
               </li>
             </ul>
           </li>
@@ -171,13 +191,19 @@
             <a class="nav-group-name-link" href="../Analytics.html">Analytics</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/WinguAnalytics.html">WinguAnalytics</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Interaction.html">Interaction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Interaction/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DwellInteraction.html">DwellInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ViewInteraction.html">ViewInteraction</a>
               </li>
             </ul>
           </li>
@@ -192,6 +218,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredefinedActions.html">PredefinedActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredefinedActions/Option.html">– Option</a>
               </li>
             </ul>
           </li>
@@ -360,20 +392,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Other Classes.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/ViewInteraction.html">ViewInteraction</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -383,7 +401,7 @@
             <h1>Image</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Image</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Image</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
@@ -505,7 +523,7 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ImageType</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ImageType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -515,9 +533,9 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential5ImageC3url3for10Foundation3URLVSg12CoreGraphics7CGFloatV_tF"></a>
-                    <a name="//apple_ref/swift/Method/url(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential5ImageC3url3for10Foundation3URLVSg12CoreGraphics7CGFloatV_tF">url(for:)</a>
+                    <a name="/s:17winguSDKEssential5ImageC3url3for13configuration10Foundation3URLVSg12CoreGraphics7CGFloatV_AA18WinguConfigurationVSgtF"></a>
+                    <a name="//apple_ref/swift/Method/url(for:configuration:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential5ImageC3url3for13configuration10Foundation3URLVSg12CoreGraphics7CGFloatV_AA18WinguConfigurationVSgtF">url(for:configuration:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -536,7 +554,7 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">url</span><span class="p">(</span><span class="k">for</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">url</span><span class="p">(</span><span class="k">for</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Structs/WinguConfiguration.html">WinguConfiguration</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -553,6 +571,18 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                               <td>
                                 <div>
                                   <p>Size of the expected image frame (ex. If image needs to be placed on iPhone 6 in <code>UIImageView</code> with size 100x100 <code>width</code> paramter should be 100)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Wingu configuration</p>
                                 </div>
                               </td>
                             </tr>
@@ -583,7 +613,7 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Download image from URL passed with expected with, Should be match with method <code><a href="../Classes/Image.html#/s:17winguSDKEssential5ImageC3url3for10Foundation3URLVSg12CoreGraphics7CGFloatV_tF">url(for:)</a></code> to get right URL for size of the <code>UIImageView</code></p>
+                        <p>Download image from URL passed with expected with, Should be match with method <code>url(for:)</code> to get right URL for size of the <code>UIImageView</code></p>
 
                       </div>
                       <div class="declaration">
@@ -606,7 +636,7 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
                               </td>
                               <td>
                                 <div>
-                                  <p>URL to download image. It&rsquo;s recommended to use <code><a href="../Classes/Image.html#/s:17winguSDKEssential5ImageC3url3for10Foundation3URLVSg12CoreGraphics7CGFloatV_tF">url(for:)</a></code> function to return URL.</p>
+                                  <p>URL to download image. It&rsquo;s recommended to use <code>url(for:)</code> function to return URL.</p>
                                 </div>
                               </td>
                             </tr>
@@ -636,8 +666,8 @@ For managing images wingu is using <a href="https://cloudinary.com">Cloudinary</
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-18)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

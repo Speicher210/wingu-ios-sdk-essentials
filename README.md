@@ -78,25 +78,23 @@ This guide shows you how get triggers callbacks with default configuration. You 
 We recommend create a one instance of `winguLocations`:
 
 ```swift
-lazy var winguLocations: WinguLocations = {
-    let winguLocations: WinguLocations = WinguLocations.shared
-    winguLocations.delegate = self
-    return winguLocations
+lazy var wingu: WinguLocations = {
+    let wingu: WinguLocations = WinguLocations(configuration: WinguConfiguration.defaultConfiguration)
+    wingu.delegate = self
+    return wingu
 }()
 ```
 
 Your class should conform to protocol `WinguLocationsDelegate` and there you will receive all delegate callbacks from wingu triggers 
 ```swift
-extension YourClass: WinguLocationsDelegate { }
+extension YourClass: WinguLocationsDelegate { 
+	func winguChannels(_ channels: [Channel]) {
+    	// your code here
+	}
+}
 ```
 
 `WinguLocationsDelegate` requires only one method implemented to get triggers, but you can check [full documentation](#full_documentation). This required callback is:
-
-```swift
-func winguChannels(_ channels: [Channel]) {
-    // your code here
-}
-```
 
 
 `Channel` is default class for all wingu triggers. This method will return available list of channels in range and will also get called whenever some trigger are out of range or scanner found a new one.
@@ -104,10 +102,15 @@ func winguChannels(_ channels: [Channel]) {
 You can start ranging beacons by calling
 
 ```swift
-winguLocations.start()
+wingu.start()
 ```
 
 See example project to learn more.
+
+> The quickest way to get started is to use above code in your project. Demo `apiKey` is already there. If you want to start receiving geofences just select `San Francisco, CA, USA` from predefined locations in Xcode and you'll get content attached to default configuration.
+
+![alt text][logo]
+[logo]: https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/docs/docs_assets/sfXcode.gif "San Francisco, CA, USA"
 
 <a name="full_documentation"></a>
 ## Documentation

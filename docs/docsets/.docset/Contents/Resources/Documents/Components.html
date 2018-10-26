@@ -14,6 +14,7 @@
   </head>
   <body>
 
+    <a name="//apple_ref/swift/Section/Components" class="dashAnchor"></a>
 
     <a title="Components  Reference"></a>
 
@@ -65,10 +66,30 @@
                 <a class="nav-group-task-link" href="Classes/BeaconScanner/MonitoringState.html">– MonitoringState</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/GeofenceScanner.html">GeofenceScanner</a>
+                <a class="nav-group-task-link" href="Scanners.html#/c:@M@winguSDKEssential@objc(cs)GeofenceScanner">GeofenceScanner</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/WinguLocationsDelegate.html">WinguLocationsDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Configuration.html">Configuration</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration.html">WinguConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Analytics.html">– Analytics</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Geofences.html">– Geofences</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Notifications.html">– Notifications</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/WinguConfiguration/Beacons.html">– Beacons</a>
               </li>
             </ul>
           </li>
@@ -170,13 +191,19 @@
             <a class="nav-group-name-link" href="Analytics.html">Analytics</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/WinguAnalytics.html">WinguAnalytics</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction.html">Interaction</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Interaction/Kind.html">– Kind</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
               </li>
             </ul>
           </li>
@@ -191,6 +218,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/NotificationManagerProtocol.html">NotificationManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions.html">PredefinedActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/PredefinedActions/Option.html">– Option</a>
               </li>
             </ul>
           </li>
@@ -359,20 +392,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Other Classes.html">Other Classes</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Other Classes.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/ViewInteraction.html">ViewInteraction</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -412,7 +431,7 @@ Where you can change parameters like corner radius, fonts and colors.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ActionComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ActionComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -446,7 +465,7 @@ This is a collection of mp3 playable whenever <code><a href="Classes/Deck.html">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AudioPlaylistComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AudioPlaylistComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -479,7 +498,7 @@ Brand bar allow to put text and image.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BrandBarComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">BrandBarComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -511,7 +530,7 @@ Brand bar allow to put text and image.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CMSComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CMSComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -551,7 +570,7 @@ It is possible to store all information in iOS default <code>Contacts</code> app
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ContactComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ContactComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -586,7 +605,7 @@ Coupon is entirly configurable in wingu portal</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CouponComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CouponComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -618,7 +637,7 @@ Coupon is entirly configurable in wingu portal</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FileComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FileComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -650,7 +669,7 @@ Coupon is entirly configurable in wingu portal</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FormComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">FormComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -683,7 +702,7 @@ Images are not directly accessible from <code>GalleryComponent</code>, they&rsqu
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GalleryComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">GalleryComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -717,7 +736,7 @@ This component using standard <code>CoreLocation</code> method and arguments and
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LocationComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LocationComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -750,7 +769,7 @@ The values 0-5 are fixed and cannot be changed.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RatingComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">RatingComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -784,7 +803,7 @@ Type here should be threated as read-only and shouldn&rsquo;t be overriden.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeparatorComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SeparatorComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -817,7 +836,7 @@ It is not possible to configure fullscreen. Component only shows preview and red
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SurveyMonkeyComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SurveyMonkeyComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -850,7 +869,7 @@ It&rsquo;s usually youtube and shown with provided by Google component with trad
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">VideoComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">VideoComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -883,7 +902,7 @@ It connects automatically to API and trigger action.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WebhookComponent</span><span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WebhookComponent</span> <span class="p">:</span> <span class="kt"><a href="Classes/Component.html">Component</a></span></code></pre>
 
                         </div>
                       </div>
@@ -898,8 +917,8 @@ It connects automatically to API and trigger action.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-18)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-10-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

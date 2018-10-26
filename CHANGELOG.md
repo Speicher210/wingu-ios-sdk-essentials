@@ -1,8 +1,11 @@
 # Change Log
 
-> **Note:** Changes mark as **Beta** can change rapidly without backwards compatimbility.
+
+#### 1.0.x Releases
+- [1.0.0](#1.0.0)
 
 #### 0.4.x Releases
+- [0.4.12](#0.4.12)
 - [0.4.11](#0.4.11)
 - [0.4.10](#0.4.10)
 - [0.4.9](#0.4.9)
@@ -23,6 +26,24 @@
 - [0.3.0](#0.3.0)
 
 --
+
+# [1.0.0 Aviation](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.0)
+
+###### API version 0.12
+
+This version has changed a lot in process of initialization an SDK and with interacting from background. See changes in public methods below. All configuration from classes like `BeaconScanner` or `NotificationsManager` was moved from clasess to one structure - `WinguConfiguration` [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Structs/WinguConfiguration.html)
+
+#### Removed:
+* `WinguLocations` is no longer singleton. `WinguLocations.shared` was removed. This should be replaced by `WinguLocation(configuraton:)` initializer.
+- `BeaconScanner` is no longer singleton. `BeaconScanner.shared` was removed. This should be replaced by regular initializer.
+- `GeofenceScanner` is no longer singleton. `GeofenceScanner.shared` was removed. This should be replaced by regular initializer.
+
+#### Added:
+- `WinguLocation` has now initializer with `WinguConfiguration`. 
+- `WinguConfiguration` now containing all the information that should be used to configure SDK for your use case. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Structs/WinguConfiguration.html)
+
+#### Changed:
+- wingu no longer stopping a service on deinit method. Remember to stop service when you no longer need it.
 
 ## [0.4.12](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/0.4.12)
 

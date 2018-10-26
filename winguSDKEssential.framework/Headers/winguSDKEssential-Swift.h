@@ -397,16 +397,16 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
-/// :nodoc:
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+
+
+@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -669,10 +669,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Deck")
 
 /// As a part of analytics interaction is a representation of single event happen in <code>Channel</code> or <code>Content</code>.<br/>
 /// It’s automatically triggered by this library or Content library.<br/>
-/// <blockquote>
-/// <em>Note:</em> Use this class only with disabled automatic sending in <code>WinguAnalytics</code> class.
-///
-/// </blockquote>
 SWIFT_CLASS("_TtC17winguSDKEssential11Interaction")
 @interface Interaction : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -999,7 +995,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential14NetworkManager")
 /// In order to receive notifications there might be different action required for different <code>Channel</code> type.<br/>
 SWIFT_CLASS("_TtC17winguSDKEssential20NotificationsManager")
 @interface NotificationsManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 @class UNUserNotificationCenter;
@@ -1205,18 +1202,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential16WebhookComponent")
 
 
 
-/// Analytics configuration may happen here.<br/>
-/// <blockquote>
-/// <em>Note</em>: You should disable automatic data gathering if you want to use custom events with <code>Interaction</code> class<br/>
-///
-/// </blockquote>
-/// By default wingu will gather analytics, they can be reviewed in wingu portal.
-SWIFT_CLASS("_TtC17winguSDKEssential14WinguAnalytics")
-@interface WinguAnalytics : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 /// Single file object associated with <code>FileComponent</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential9WinguFile")
 @interface WinguFile : NSObject
@@ -1268,6 +1253,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 
 
 
+
+
 @class CLBeaconRegion;
 @class CLRegion;
 
@@ -1278,6 +1265,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
+
+
 
 
 
