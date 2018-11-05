@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.1](#1.0.1) Swift **4.2.1**
 - [1.0.0](#1.0.0)
 
 #### 0.4.x Releases
@@ -26,6 +27,13 @@
 - [0.3.0](#0.3.0)
 
 --
+
+# [1.0.1](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.1)
+
+###### API version 0.12
+
+#### Changed:
+* This version was recompiled for Swift **4.2.1**
 
 # [1.0.0 Aviation](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.0)
 

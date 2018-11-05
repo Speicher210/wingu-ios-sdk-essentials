@@ -9,7 +9,7 @@
 
 wingu sdk essentials is an iOS SDK for managing triggers configured at [wingu](https://wingu.de). It will range beacons and find geofences already with content attached. 
 
-wingu essentials is delivered to you in pre-compiled form `.framework`. It's written in Swift 4.2
+wingu essentials is delivered to you in pre-compiled form `.framework`. It's written in Swift 4.2.1
 
 
 # Table of Contents
@@ -109,7 +109,8 @@ See example project to learn more.
 
 > The quickest way to get started is to use above code in your project. Demo `apiKey` is already there. If you want to start receiving geofences just select `San Francisco, CA, USA` from predefined locations in Xcode and you'll get content attached to default configuration.
 
-![alt text](https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/docs/docs_assets/docs_assets/sfXcode.gif "San Francisco, CA, USA")
+![alt text][logo]
+[logo]: https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/master/docs/docs_assets/sfXcode.gif "San Francisco, CA, USA"
 
 <a name="full_documentation"></a>
 ## Documentation
