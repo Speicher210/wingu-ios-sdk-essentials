@@ -193,18 +193,6 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Interaction.html">Interaction</a>
               </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Interaction/Kind.html">– Kind</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/ViewInteraction.html">ViewInteraction</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -359,6 +347,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RatingComponentInfo.html">RatingComponentInfo</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/AvailableLanguages.html">AvailableLanguages</a>
@@ -563,58 +554,6 @@ By default this property is set to 1.1.1970</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
-                    <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:17winguSDKEssential7ChannelC6encode10Foundation4DataVSgyF"></a>
                     <a name="//apple_ref/swift/Method/encode()" class="dashAnchor"></a>
                     <a class="token" href="#/s:17winguSDKEssential7ChannelC6encode10Foundation4DataVSgyF">encode()</a>
@@ -690,6 +629,60 @@ It will be returned as explicit type (ex. <code>Beacon</code>,<code>Geofence</co
                       <div>
                         <h4>Return Value</h4>
                         <p>subclass of <code>Channel</code> such as <code><a href="../Classes/Beacon.html">Beacon</a></code> or <code><a href="../Classes/Geofence.html">Geofence</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential7ChannelC11stopViewingyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopViewing()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential7ChannelC11stopViewingyyF">stopViewing()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this method will end <code><a href="../Classes/Interaction.html">Interaction</a></code> of <code>.view</code> type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopViewing</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential7ChannelC12stopDwellingyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopDwelling()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential7ChannelC12stopDwellingyyF">stopDwelling()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calling this method will end <code><a href="../Classes/Interaction.html">Interaction</a></code> of <code>.dwell</code> type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopDwelling</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -808,7 +801,7 @@ It will be combined with <code><a href="../Classes/SeenChannels.html">SeenChanne
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-11-05)</p>
+      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-11-09)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

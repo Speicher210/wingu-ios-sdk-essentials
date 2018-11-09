@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.2](#1.0.2)
 - [1.0.1](#1.0.1) Swift **4.2.1**
 - [1.0.0](#1.0.0)
 
@@ -27,6 +28,28 @@
 - [0.3.0](#0.3.0)
 
 --
+
+# [1.0.2](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.2)
+
+###### API version 0.13
+
+#### Changed:
+* API Version changed from `0.12` to `0.13`.
+* `RatingComponent` post method changed from single parameters for a helper structure `RatingComponentInfo` [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Structs/RatingComponent.html) 
+
+#### Added:
+* Analytics for `Deck` and `Content` visibility will be automatically collected when `winguSDKContent` in use. Whenever you're using plain `winguSDKEssentials` and want to keep track analytics in wingu portal [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Interatction.html)
+* Add extension for `Notification.Name` with `winguLogger`. That's allow you to get logs in convenient place using `NotificationCenter` registration. Full list of errors and warnings will be released soon.
+* `Interaction` gain ability to record different types of analytics. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Interatction.html)
+* `Analyzable` types such as `Channel`, `Content`, `Deck` now has `stop` methods for Analytics (`stopViewing` and `stopDwelling`).
+* `FormComponent` get `displayable()` function to return item that was displayed for a user to get persistent field filled up [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/FormComponent.html)
+* `FormComponent` has now `savePersistantForm()` that will store on device pre-filled persistent form mark as persistent in a wingu portal [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/FormComponent.html)
+* `FormElement` has `isPersistent` value for keeping object persistent (settable in wingu portal) [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/FormElement.html)
+
+
+#### Removed:
+* As `Analytics` shoudn't really be a part of `WinguLocation` this part was moved to `Interaction`.
+* Classes `DwellInteraction`, `EnterInteraction` and `ViewInteraction` are no longer public. `Interaction` gain special level of abstraction to handle different analytics types. 
 
 # [1.0.1](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.1)
 
