@@ -436,12 +436,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
-
-
 @interface Boundary (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Boundary * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 /// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
@@ -621,6 +621,21 @@ SWIFT_CLASS("_TtC17winguSDKEssential7Content")
 @end
 
 
+
+
+/// This is a representation of menu item content.
+SWIFT_CLASS("_TtC17winguSDKEssential17ContentOfMenuItem")
+@interface ContentOfMenuItem : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface ContentOfMenuItem (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (ContentOfMenuItem * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// CouponComponent works with <code>Barcode</code> to provide reach experience. It may look like this:
@@ -836,13 +851,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -945,11 +960,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential17LocationComponent")
 
 
 
-/// :nodoc:
-SWIFT_CLASS("_TtC17winguSDKEssential14NetworkManager")
-@interface NetworkManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+/// Contains information about menu item and assigned content. This is a representation of an object created in wingu portal.
+SWIFT_CLASS("_TtC17winguSDKEssential8MenuItem")
+@interface MenuItem : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -957,12 +971,10 @@ SWIFT_CLASS("_TtC17winguSDKEssential14NetworkManager")
 
 
 
-
-
-
-
-
-
+@interface MenuItem (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (MenuItem * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// Allows you to receive <code>Notifications</code> through wingu platform.<br/>

@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.3](#1.0.3)
 - [1.0.2](#1.0.2)
 - [1.0.1](#1.0.1) Swift **4.2.1**
 - [1.0.0](#1.0.0)
@@ -28,6 +29,12 @@
 - [0.3.0](#0.3.0)
 
 --
+# [1.0.3](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.3)
+
+###### API version 0.13
+
+#### Added:
+- Add [MenuItem](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/MenuItem.html) and [ContentOfMenuItem](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/ContentOfMenuItem.html).
 
 # [1.0.2](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.2)
 
