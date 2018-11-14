@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.4](#1.0.4)
 - [1.0.3](#1.0.3)
 - [1.0.2](#1.0.2)
 - [1.0.1](#1.0.1) Swift **4.2.1**
@@ -29,6 +30,13 @@
 - [0.3.0](#0.3.0)
 
 --
+# [1.0.4](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.4)
+
+###### API version 0.13
+
+#### Fixed:
+- Sending geofences physical is now working as expected [See Issue #1](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/issues/1)
+
 # [1.0.3](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.3)
 
 ###### API version 0.13

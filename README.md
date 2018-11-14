@@ -38,17 +38,6 @@ pod 'wingu-ios-sdk-essentials'
 
 [Carthage](https://github.com/Carthage/Carthage) is a simple, decentralized dependency manager for Cocoa. 
 
-#### no-build option
-
-Add this dependency to your `Cartfile`
-
-```ruby
-github "wingu-GmbH/wingu-ios-sdk-essentials"
-```
-
-> **Please Note** this is pre-compiled .framework, so there is only need to fetch it using Carthage not build. Use `--no-build` option in carthage command (ex:  `carthage update --platform iOS --no-build`)
-
-#### Direct link
 
 Version of library can be downloaded using `binary` option in `Cartfile`. Add this line to `Cartfile`:
 
@@ -61,7 +50,7 @@ binary "https://raw.githubusercontent.com/wingu-GmbH/wingu-ios-sdk-essentials/ma
 Copy `winguSDKEssential.framework` file from this repository to your project.
 
 <a name="requirements"></a>
-## Requirments
+## Requirements
 
 There is a location permission needed to run an app and work with wingu channels. Add this keys into your `Info.plist` file:
 
