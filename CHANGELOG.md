@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.5](#1.0.5)
 - [1.0.4](#1.0.4)
 - [1.0.3](#1.0.3)
 - [1.0.2](#1.0.2)
@@ -30,6 +31,13 @@
 - [0.3.0](#0.3.0)
 
 --
+# [1.0.5](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.5)
+
+###### API version 0.13
+
+#### Added:
+- variable `unseen` is now `public` in `Channel`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html)
+
 # [1.0.4](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.4)
 
 ###### API version 0.13
