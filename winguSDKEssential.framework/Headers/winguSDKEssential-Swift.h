@@ -399,13 +399,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Beacon * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -436,12 +436,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
+
+
 @interface Boundary (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Boundary * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 /// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
@@ -471,26 +471,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential17BrandBarComponent")
 
 
 
-/// CMSComponent is a representation of Markdown or HTML component created in wingu portal.
-SWIFT_CLASS("_TtC17winguSDKEssential12CMSComponent")
-@interface CMSComponent : Component
-/// :nodoc:
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-@interface CMSComponent (SWIFT_EXTENSION(winguSDKEssential))
-/// :nodoc:
-+ (CMSComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-
-
-
-
 /// Defines position of components inside <code>Deck</code>.
 SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 @interface Card : NSObject
@@ -505,6 +485,8 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 /// :nodoc:
 + (Card * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -535,11 +517,15 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
+@interface Component (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 @interface Component (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -651,10 +637,14 @@ SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 
 
 
+
+
 @interface CouponComponent (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (CouponComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -885,12 +875,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
-
-
 @interface Image (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Image * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 /// Contains information about image before download
@@ -1028,6 +1018,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 
 @interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
 + (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1058,10 +1054,14 @@ SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 
 
 
+
+
 @interface RatingComponent (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (RatingComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -1119,6 +1119,28 @@ SWIFT_CLASS("_TtC17winguSDKEssential21SurveyMonkeyComponent")
 /// :nodoc:
 + (SurveyMonkeyComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
+
+
+
+/// TextComponent is a representation of Markdown or HTML component created in wingu portal.
+SWIFT_CLASS("_TtC17winguSDKEssential13TextComponent")
+@interface TextComponent : Component
+/// :nodoc:
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+@interface TextComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (TextComponent * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 
 
 

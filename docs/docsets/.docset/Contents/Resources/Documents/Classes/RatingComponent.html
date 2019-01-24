@@ -109,12 +109,6 @@
                 <a class="nav-group-task-link" href="../Classes/BrandBarComponent.html">BrandBarComponent</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/CMSComponent.html">CMSComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/CMSComponent/CMSType.html">– CMSType</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/ContactComponent.html">ContactComponent</a>
               </li>
               <li class="nav-group-task">
@@ -394,6 +388,25 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextComponent.html">TextComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextComponent/TextType.html">– TextType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FileDownloadDelegate.html">FileDownloadDelegate</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -440,6 +453,100 @@ The values 0-5 are fixed and cannot be changed.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential15RatingComponentC5valueSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/value" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential15RatingComponentC5valueSiSgvp">value</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Value of submitted rating.<br/>
+If not submitted yet this will be <code>nil</code>.<br/></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential15RatingComponentC4saveyyF"></a>
+                    <a name="//apple_ref/swift/Method/save()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential15RatingComponentC4saveyyF">save()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saving ratings to internal storage. Errors will be logged in console.</p>
+
+<blockquote>
+<p><strong>Note</strong>: In next releases it may change for a method that can throw exception.<br/></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">save</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential15RatingComponentC5savedSayACGyFZ"></a>
+                    <a name="//apple_ref/swift/Method/saved()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential15RatingComponentC5savedSayACGyFZ">saved()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saved rating fetching method. This method will parse existing ratings and prepare <code><a href="../Classes/Component.html">Component</a></code> object to display. Result currently is sorted by saved date (oldest first). <br/></p>
+
+<blockquote>
+<p><strong>Note:</strong> In next release it may change for a method that can throw exception.<br/></p>
+</blockquote>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">saved</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">RatingComponent</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Saved ratings component</p>
                       </div>
                     </section>
                   </div>
@@ -524,7 +631,7 @@ This method shouldn&rsquo;t be derectly called if <code>wingu-ios-sdk-content</c
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-12-04)</p>
+      <p>&copy; 2019 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2019-01-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

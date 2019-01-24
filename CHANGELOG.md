@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.6](#1.0.6)
 - [1.0.5](#1.0.5)
 - [1.0.4](#1.0.4)
 - [1.0.3](#1.0.3)
@@ -29,6 +30,27 @@
 0.3.x Releases are the last release that will mantain support for iOS 9.x. Since Release 0.4.0 wingu-ios-sdk-essentials minimum deployment target will be set to iOS 10.0
 
 - [0.3.0](#0.3.0)
+
+--
+# [1.0.6](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.6)
+
+###### API version 0.13
+
+#### Changed:
+- `CMSComponent` was renamed to `TextComponent`.
+- `CMSType` was renamed to `TextType`.
+- When fetching a stored file will fail for some reason file will be clear up from invalid data.
+
+
+#### Added:
+- `CouponComponent` has now option to save data and get saved collection. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/CouponComponent.html)
+- `RatingComponent` now has ability to store value and return voted value from cache.
+- Add `FileDownloadDelegate` protocol to be able to track progress of download large files like PDF.
+- Add support for `.png` files in `ImageMetadata`.
+
+#### Fixed:
+- Fixed issue that may cause `SeenChannels` not load after incomplete analytics. 
+- GIFs wrong url generation was fixed.
 
 --
 # [1.0.5](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.5)

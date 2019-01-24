@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DwellInteraction Class Reference</title>
+    <title>FileDownloadDelegate Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/DwellInteraction" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Protocol/FileDownloadDelegate" class="dashAnchor"></a>
 
-    <a title="DwellInteraction Class Reference"></a>
+    <a title="FileDownloadDelegate Protocol Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      DwellInteraction Class Reference
+      FileDownloadDelegate Protocol Reference
     </p>
 
     <div class="content-wrapper">
@@ -107,12 +107,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/BrandBarComponent.html">BrandBarComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/CMSComponent.html">CMSComponent</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/CMSComponent/CMSType.html">– CMSType</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/ContactComponent.html">ContactComponent</a>
@@ -192,18 +186,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Interaction.html">Interaction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/Interaction/Kind.html">– Kind</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/DwellInteraction.html">DwellInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Analytics.html#/c:@M@winguSDKEssential@objc(cs)EnterInteraction">EnterInteraction</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/ViewInteraction.html">ViewInteraction</a>
               </li>
             </ul>
           </li>
@@ -355,10 +337,24 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Menu Item.html">Menu Item</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MenuItem.html">MenuItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ContentOfMenuItem.html">ContentOfMenuItem</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RatingComponentInfo.html">RatingComponentInfo</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/AvailableLanguages.html">AvailableLanguages</a>
@@ -392,20 +388,40 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextComponent.html">TextComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TextComponent/TextType.html">– TextType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Other Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/FileDownloadDelegate.html">FileDownloadDelegate</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
 
         <section class="section">
           <div class="section-content">
-            <h1>DwellInteraction</h1>
+            <h1>FileDownloadDelegate</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">DwellInteraction</span> <span class="p">:</span> <span class="kt"><a href="../Classes/Interaction.html">Interaction</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FileDownloadDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Dwell provide information of time spend in <code><a href="../Classes/Channel.html">Channel</a></code> area. Dwell is period of time thus <code>startInteraction</code> and <code>end</code> is needed.</p>
+            <p>File download delegate protocol allows to track progress on file download<br/>
+Methods for tracking progress and successfull messages are <strong>required</strong></p>
 
           </div>
         </section>
@@ -417,9 +433,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential16DwellInteractionC3endyyF"></a>
-                    <a name="//apple_ref/swift/Method/end()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential16DwellInteractionC3endyyF">end()</a>
+                    <a name="/s:17winguSDKEssential20FileDownloadDelegateP14updateProgress8progressySf_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateProgress(progress:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential20FileDownloadDelegateP14updateProgress8progressySf_tF">updateProgress(progress:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -427,16 +443,81 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>End dwell interaction.</p>
+                        <p>Progress update delegate, usually used for refreshing an UI.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">end</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateProgress</span><span class="p">(</span><span class="nv">progress</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progress</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>value of progress between <code>0</code> and <code>1</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17winguSDKEssential20FileDownloadDelegateP16downloadComplete7successySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/downloadComplete(success:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential20FileDownloadDelegateP16downloadComplete7successySb_tF">downloadComplete(success:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate tells if download was sucessfull</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">downloadComplete</span><span class="p">(</span><span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>when download is completed with success parameter will return <code>true</code>. Otherwise <code>false</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -449,8 +530,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2018-11-05)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2019 <a class="link" href="https://wingu.app" target="_blank" rel="external">wingu GmbH</a>. All rights reserved. (Last updated: 2019-01-24)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Development Tools  Reference</title>
+    <title>Other Protocols  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Development Tools" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Other Protocols" class="dashAnchor"></a>
 
-    <a title="Development Tools  Reference"></a>
+    <a title="Other Protocols  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html"> Reference</a>
       <img class="carat" src="img/carat.png" />
-      Development Tools  Reference
+      Other Protocols  Reference
     </p>
 
     <div class="content-wrapper">
@@ -413,8 +413,9 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Development Tools</h1>
-            
+            <h1>Other Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
           </div>
         </section>
 
@@ -425,9 +426,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential6LoggerV"></a>
-                    <a name="//apple_ref/swift/Struct/Logger" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential6LoggerV">Logger</a>
+                    <a name="/s:17winguSDKEssential20FileDownloadDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/FileDownloadDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential20FileDownloadDelegateP">FileDownloadDelegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -435,15 +436,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Logging events from wingu SDK. Only for development purposes, will be moved somewhere else in future releases without backwards compability.</p>
+                        <p>File download delegate protocol allows to track progress on file download<br/>
+Methods for tracking progress and successfull messages are <strong>required</strong></p>
 
-                        <a href="Structs/Logger.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/FileDownloadDelegate.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Logger</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FileDownloadDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                         </div>
                       </div>

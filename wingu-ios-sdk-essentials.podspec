@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wingu-ios-sdk-essentials'
-  s.version          = '1.0.5'                  #sh_replace_version
+  s.version          = '1.0.6'                  #sh_replace_version
   s.summary          = 'Essentials part of wingu iOS SDK'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,9 @@ Essentials part of wingu iOS SDK. Visit www.wingu.de to know more.
   s.source           = { :git => 'https://github.com/wingu-GmbH/wingu-ios-sdk-essentials.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wingude'
   s.frameworks = 'UIKit','Foundation','CoreLocation'
-  s.ios.deployment_target = '9.0'
+  
+  s.ios.deployment_target = '10.0'
+  s.swift_version = "4.2.1"
 
   s.source_files = 'winguSDKEssential.framework/Headers/*'
   s.vendored_frameworks = 'winguSDKEssential.framework'
@@ -42,6 +44,7 @@ Essentials part of wingu iOS SDK. Visit www.wingu.de to know more.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
+
 
 
 
