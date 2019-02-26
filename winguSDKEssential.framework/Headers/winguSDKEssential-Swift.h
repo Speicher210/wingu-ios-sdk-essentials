@@ -327,6 +327,19 @@ SWIFT_CLASS("_TtC17winguSDKEssential18AvailableLanguages")
 
 
 
+@interface AvailableLanguages (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface AvailableLanguages (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>AvailableLanguages.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Contains information about background color.
@@ -413,6 +426,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential6Beacon")
 
 
 
+@interface Beacon (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>Beacon.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Layer of abstraction for <code>CoreLocation</code> ranging & monitoring iBeacons. This is build using Singleton principle. There will never be a need to use more than one instance of <code>BeaconScanner</code> to work with wingu beacons. By default regions to monitor and ranging are equal and default wingu regions apply if not specyfied otherwise.
@@ -494,38 +514,51 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 
 
-
-
 @interface Channel (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Channel * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@interface Component (SWIFT_EXTENSION(winguSDKEssential))
+@interface Channel (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
+
+
+
+
+@interface Channel (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>Channel.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
+
+
+
+
+
+
+
+
+
+
+
 
 
 @interface Component (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface Component (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
++ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -627,7 +660,7 @@ SWIFT_CLASS("_TtC17winguSDKEssential17ContentOfMenuItem")
 /// CouponComponent works with <code>Barcode</code> to provide reach experience. It may look like this:
 /// <img src="../docs_assets/CouponComponent.png" alt="Coupon Component"/></br>
 /// Barcode generation happen on OS level using <code>Machine Readable Object Types</code> such as EAN-13. To learn more visit <a href="https://developer.apple.com/documentation/avfoundation/avmetadataobject.objecttype/1618807-ean13">Official Apple Documentation</a>
-/// Coupon is entirly configurable in wingu portal
+/// Coupon is entirely configurable in wingu portal
 SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 @interface CouponComponent : Component
 /// :nodoc:
@@ -649,6 +682,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential15CouponComponent")
 
 
 
+@interface CouponComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>CouponComponent.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 
@@ -732,6 +772,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential13FormComponent")
 
 
 
+@interface FormComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>FormComponent.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Form component element. Available types:<br/>
@@ -855,6 +902,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 
 
+@interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>Geofence.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Scanner for geofences. It shared some behaviours from <code>BeaconScanner</code> whenever it makes sense.<br/>
@@ -875,12 +929,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential5Image")
 
 
 
+
+
 @interface Image (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Image * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 /// Contains information about image before download
@@ -1018,13 +1072,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 
 @interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1066,6 +1120,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential15RatingComponent")
 
 
 
+@interface RatingComponent (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>RatingComponent.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Channels that already has been visited. Works in companion to delegate method that returns only unseen channels in <code>WinguLocationsDelegate</code><br/>
@@ -1080,6 +1141,19 @@ SWIFT_CLASS("_TtC17winguSDKEssential12SeenChannels")
 
 
 
+@interface SeenChannels (SWIFT_EXTENSION(winguSDKEssential))
+/// :nodoc:
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface SeenChannels (SWIFT_EXTENSION(winguSDKEssential))
+/// Saving object permanently to device.<br/>
+/// It will create a storage if not existed before accessible by <code>SeenChannels.saved()</code>
+- (BOOL)saveAndReturnError:(NSError * _Nullable * _Nullable)error;
+/// Remove given object from internal storage.<br/>
+- (BOOL)removeAndReturnError:(NSError * _Nullable * _Nullable)error;
+@end
 
 
 /// Representation of separator components in wingu portal.<br/>

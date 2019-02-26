@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ContentOfMenuItem Class Reference</title>
+    <title>AnalyticsItem Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/ContentOfMenuItem" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/AnalyticsItem" class="dashAnchor"></a>
 
-    <a title="ContentOfMenuItem Class Reference"></a>
+    <a title="AnalyticsItem Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html"> Reference</a>
       <img class="carat" src="../img/carat.png" />
-      ContentOfMenuItem Class Reference
+      AnalyticsItem Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -406,15 +406,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>ContentOfMenuItem</h1>
+            <h1>AnalyticsItem</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ContentOfMenuItem</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">internal</span> <span class="kd">class</span> <span class="kt">AnalyticsItem</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                 </div>
               </div>
-            <p>This is a representation of menu item content.</p>
-
+            
           </div>
         </section>
 
@@ -425,9 +424,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential17ContentOfMenuItemC3uIDSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/uID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential17ContentOfMenuItemC3uIDSSSgvp">uID</a>
+                    <a name="/s:17winguSDKEssential13AnalyticsItemC5savedSayACGyKFZ"></a>
+                    <a name="//apple_ref/swift/Method/saved()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17winguSDKEssential13AnalyticsItemC5savedSayACGyKFZ">saved()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -435,14 +434,48 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unique identifier.</p>
+                        <p>Saved objects fetching method.<br/>
+Results are sorted by saved date (oldest first).<br/></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">uID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">saved</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnalyticsItem</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Collection of AnalyticsItem preserved permanently on device.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@winguSDKEssential@objc(cs)AnalyticsItem(im)saveAndReturnError:"></a>
+                    <a name="//apple_ref/swift/Method/save()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@winguSDKEssential@objc(cs)AnalyticsItem(im)saveAndReturnError:">save()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saving object permanently to device.<br/>
+It will create a storage if not existed before accessible by <code><a href="../Extensions/AnalyticsItem.html#/s:17winguSDKEssential13AnalyticsItemC5savedSayACGyKFZ">AnalyticsItem.saved()</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">save</span><span class="p">()</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -452,9 +485,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17winguSDKEssential17ContentOfMenuItemC5packsSayAA4PackCGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/packs" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17winguSDKEssential17ContentOfMenuItemC5packsSayAA4PackCGSgvp">packs</a>
+                    <a name="/c:@CM@winguSDKEssential@objc(cs)AnalyticsItem(im)removeAndReturnError:"></a>
+                    <a name="//apple_ref/swift/Method/remove()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@winguSDKEssential@objc(cs)AnalyticsItem(im)removeAndReturnError:">remove()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -462,14 +495,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Contains available packs.</p>
+                        <p>Remove given object from internal storage.<br/></p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">packs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Pack.html">Pack</a></span><span class="p">]?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">()</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>

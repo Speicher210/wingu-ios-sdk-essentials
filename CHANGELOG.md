@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.7](#1.0.7)
 - [1.0.6](#1.0.6)
 - [1.0.5](#1.0.5)
 - [1.0.4](#1.0.4)
@@ -32,6 +33,26 @@
 - [0.3.0](#0.3.0)
 
 --
+
+# [1.0.7](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.7)
+
+###### API version 0.13
+
+#### Added:
+- `CouponComponent` has now option to be removed from internal storage. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/CouponComponent.html)
+- `AvailableLanguages` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/AvailableLanguages.html)
+- `AnalyticsItem` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/AnalyticsItem.hmtl)
+- `Beacon` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Beacon.html)
+- `Channel` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html)
+- `Geofence` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Geofence.html)
+- `FormComponent` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/FormComponent.html)
+- `RatingComponent` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/RatingComponent.html)
+- `SeenChannels` gain ability to `save()` them in persistent storage, read saved by `saved()` method and `remove()` stored data. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/SeenChannels.html)
+
+#### Changed:
+- `CouponComponent` `save()` and `saved()` methods was change for throwable functions. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/CouponComponent.html)
+
+--
 # [1.0.6](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.6)
 
 ###### API version 0.13
@@ -58,7 +79,7 @@
 ###### API version 0.13
 
 #### Added:
-- variable `unseen` is now `public` in `Channel`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html)
+- variable `unseen` is now `public` in `Channel`. [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Classes/Channel.html) 
 
 # [1.0.4](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.4)
 
