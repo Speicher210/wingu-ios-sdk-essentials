@@ -456,12 +456,12 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Boundary")
 
 
 
-
-
 @interface Boundary (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
 + (Boundary * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 /// BrandBarComponent is a representation of Brand bar created in wingu portal.<br/>
@@ -552,13 +552,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential4Card")
 
 @interface Component (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface Component (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Component * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -888,13 +888,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential8Geofence")
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface Geofence (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (Geofence * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1034,17 +1034,6 @@ SWIFT_CLASS("_TtC17winguSDKEssential20NotificationsManager")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@class UNUserNotificationCenter;
-@class UNNotification;
-@class UNNotificationResponse;
-
-@interface NotificationsManager (SWIFT_EXTENSION(winguSDKEssential)) <UNUserNotificationCenterDelegate>
-/// :nodoc:
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
-/// :nodoc:
-- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
-@end
-
 
 /// Contains already localized <code>Deck</code> with <code>Card</code> collection.
 SWIFT_CLASS("_TtC17winguSDKEssential4Pack")
@@ -1072,13 +1061,13 @@ SWIFT_CLASS("_TtC17winguSDKEssential10PackLocale")
 
 @interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-+ (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface PackLocale (SWIFT_EXTENSION(winguSDKEssential))
 /// :nodoc:
-- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
++ (PackLocale * _Nullable)createFrom:(NSDictionary<NSString *, id> * _Nullable)response SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1328,6 +1317,16 @@ SWIFT_CLASS("_TtC17winguSDKEssential14WinguLocations")
 
 
 
+@class UNNotification;
+@class UNNotificationResponse;
+
+@interface WinguLocations (SWIFT_EXTENSION(winguSDKEssential)) <UNUserNotificationCenterDelegate>
+/// :nodoc:
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+/// :nodoc:
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+@end
+
 @class CLBeaconRegion;
 @class CLRegion;
 
@@ -1396,6 +1395,10 @@ SWIFT_PROTOCOL("_TtP17winguSDKEssential22WinguLocationsDelegate_")
 ///   </li>
 /// </ul>
 - (void)winguUnseenChannels:(NSArray<Channel *> * _Nonnull)channels;
+/// Callback for notification after user action on it. Could be one of the button that user triggered or tap on notification.
+/// \param channel Channel that triggered notification in a first place.
+///
+- (void)notificationReceived:(Channel * _Nullable)channel;
 @end
 
 #if __has_attribute(external_source_symbol)

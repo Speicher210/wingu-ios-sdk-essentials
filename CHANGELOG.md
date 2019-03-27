@@ -2,6 +2,7 @@
 
 
 #### 1.0.x Releases
+- [1.0.8](#1.0.8)
 - [1.0.7](#1.0.7)
 - [1.0.6](#1.0.6)
 - [1.0.5](#1.0.5)
@@ -33,6 +34,17 @@
 - [0.3.0](#0.3.0)
 
 --
+
+# [1.0.8](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.8)
+
+###### API version 0.13
+
+#### Added:
+- `WinguLocationsDelegate` gain ability to catch user notification actions (such as buttons tap or simple notification tap) in delegate method `notificationReceived(_ channel: Channel?)` [See documentation](https://wingu-gmbh.github.io/wingu-ios-sdk-essentials/Protocols/WinguLocationsDelegate.html#/c:@M@winguSDKEssential@objc(pl)WinguLocationsDelegate(im)notificationReceived:)
+
+
+#### Fix: 
+- Fix issue with mismatch delegate for `NotificationsManager`. This creates an issue with weak delegate callback that leads to designated responder was never get called. This callback is no longer available.
 
 # [1.0.7](https://github.com/wingu-GmbH/wingu-ios-sdk-essentials/releases/tag/1.0.7)
 
