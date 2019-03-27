@@ -1,8 +1,8 @@
 {
   "name": "wingu-ios-sdk-essentials",
-  "version": "0.1.0",
+  "version": "1.0.7",
   "summary": "Essentials part of wingu iOS SDK",
-  "description": "Essentials part of wingu iOS SDK",
+  "description": "Essentials part of wingu iOS SDK. Visit www.wingu.de to know more.",
   "homepage": "https://github.com/wingu-GmbH/wingu-ios-sdk-essentials",
   "license": {
     "type": "Apache-2.0",
@@ -13,8 +13,8 @@
     "Mateusz Staruchowicz": "mateusz.staruchowicz@wingu.de"
   },
   "source": {
-    "git": "https://github.com/wingu-GmbH//wingu-ios-sdk-essentials.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/wingu-GmbH/wingu-ios-sdk-essentials.git",
+    "tag": "1.0.7"
   },
   "social_media_url": "https://twitter.com/wingude",
   "frameworks": [
@@ -23,8 +23,9 @@
     "CoreLocation"
   ],
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
+  "swift_version": "4.2.1",
   "source_files": "winguSDKEssential.framework/Headers/*",
   "vendored_frameworks": "winguSDKEssential.framework"
 }

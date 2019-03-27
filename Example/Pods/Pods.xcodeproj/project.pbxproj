@@ -6,241 +6,455 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3C9A2B1BF64E595BF29EDDEC7726B7FF /* wingu-ios-sdk-essentials */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1577FF2920CB81E88CA81B393BAAF710 /* Build configuration list for PBXAggregateTarget "wingu-ios-sdk-essentials" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "wingu-ios-sdk-essentials";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		6628E777133F84C97784EA843E87AF9C /* Pods-wingu-ios-sdk-essentials_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 010599084255D7D5E70CB30E3653F1C9 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */; };
-		6BE21EEC5304811474A4C4E7508BF522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ACB467FAD036BA8F73067A5C5AAE2CDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C1D257C0818DB89E4D5D38DE721A66BE /* Pods-wingu-ios-sdk-essentials_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E6F14B41265F626CA4B4928D537584 /* Pods-wingu-ios-sdk-essentials_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA94E19D1760DEAB3030722FB7F192C7 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2A5BCD2D9719BA4E0898538A5DA6DE /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9C0D582F403EC08DAB632AA880CB6D0 /* Pods-wingu-ios-sdk-essentials_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EB88A783F2DA7394F68897855C229B /* Pods-wingu-ios-sdk-essentials_Tests-dummy.m */; };
+		17D9990270308267869115F19BFECAC3 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB62AE600CCF017552497D5CBAFC1636 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */; };
+		39C69C5964921B378D1B6E6DDA7E8D97 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1AF7FCF8B205E9E47C91F9BFD68FE77 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58FCA116A975BD30A78388D65EDEF0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C5BFA4AFB89E5F683A3CEEDA54692F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C9A2B1BF64E595BF29EDDEC7726B7FF;
+			remoteInfo = "wingu-ios-sdk-essentials";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		010599084255D7D5E70CB30E3653F1C9 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wingu-ios-sdk-essentials_Example-dummy.m"; sourceTree = "<group>"; };
-		0A6383B8E53A1621C065EF92AFF1F98C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BE35E9285A884D8DEAF708C42E52C3A /* Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2A2A5BCD2D9719BA4E0898538A5DA6DE /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wingu-ios-sdk-essentials_Example-umbrella.h"; sourceTree = "<group>"; };
-		3418D6A3EB286B0BE7CA3ADCB00931B5 /* Pods-wingu-ios-sdk-essentials_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wingu-ios-sdk-essentials_Example-resources.sh"; sourceTree = "<group>"; };
-		44FA27E051E926CCC81834232516389A /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		52139523B1453CF2E2F3C617918DC484 /* Pods-wingu-ios-sdk-essentials_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		52C1A6BF3717812D04678FFD09B45C7F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		64C4B9DA30AD882328DDC5D6F8AE56F3 /* Pods-wingu-ios-sdk-essentials_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wingu-ios-sdk-essentials_Example.modulemap"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6ECB6E589A0D9E84FEA39EADCF7B2040 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78D689698209907371AA742AB7C283B6 /* Pods_wingu_ios_sdk_essentials_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wingu_ios_sdk_essentials_Example.framework; path = "Pods-wingu-ios-sdk-essentials_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C1D35B1F45B13885F9D316B09D1C3A4 /* wingu-ios-sdk-essentials.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "wingu-ios-sdk-essentials.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7F6C2FE9C654DC8A3BAFD0E1CD208A6D /* Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		89D526E2F1D74E8ACB64CF7E5E022D4F /* winguSDKEssential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = winguSDKEssential.h; path = winguSDKEssential.framework/Headers/winguSDKEssential.h; sourceTree = "<group>"; };
-		8E4C3D8FF9D942E2203B6E8D4CF13A6D /* winguSDKEssential-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "winguSDKEssential-Swift.h"; path = "winguSDKEssential.framework/Headers/winguSDKEssential-Swift.h"; sourceTree = "<group>"; };
+		0107A3BC707D97509246BE47F9D98D5C /* Notifications.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notifications.html; path = docs/Notifications.html; sourceTree = "<group>"; };
+		02FE927AEBDF55A04BC935891BB162B0 /* Development Tools.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Development Tools.html"; path = "docs/Development Tools.html"; sourceTree = "<group>"; };
+		033AD4B59695FAEB8F22D2A8A5C64174 /* wingu-ios-sdk-essentials.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "wingu-ios-sdk-essentials.xcconfig"; sourceTree = "<group>"; };
+		03FAA91A411DE005793345F8081FD231 /* FormComponentError.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormComponentError.html; path = docs/Enums/FormComponentError.html; sourceTree = "<group>"; };
+		074FC733293CF5B34DF577104F29EF87 /* RediscoverNotificationTime.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RediscoverNotificationTime.html; path = docs/Extensions/RediscoverNotificationTime.html; sourceTree = "<group>"; };
+		07F98691F707D6D047CE7F2A720AA2C9 /* AudioPlaylistComponent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = AudioPlaylistComponent.png; path = docs/docs_assets/AudioPlaylistComponent.png; sourceTree = "<group>"; };
+		09468A857AEDDF08E21ECE567D682E05 /* FileDownloadDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FileDownloadDelegate.html; path = docs/Protocols/FileDownloadDelegate.html; sourceTree = "<group>"; };
+		0D07E6FE110FEE3E503AAACE5EAE614B /* Other Protocols.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Other Protocols.html"; path = "docs/Other Protocols.html"; sourceTree = "<group>"; };
+		0F0CE2259F01388D998EEA2270E8B5FC /* ActionType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ActionType.html; path = docs/Classes/ActionComponent/ActionType.html; sourceTree = "<group>"; };
+		112DB04F6EB05E26BC2176F1C9FE2B0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1306D91DBCA1981C7E57DF21431A44D0 /* ImageMetadata.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ImageMetadata.html; path = docs/Classes/ImageMetadata.html; sourceTree = "<group>"; };
+		130E1D69D168F69F823568807A7AC437 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		15F2555030D2E2442284B0B911CF06B6 /* Contact Component.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Contact Component.html"; path = "docs/Contact Component.html"; sourceTree = "<group>"; };
+		165B82ABF02DB840BDACC1BCA9ACBF38 /* WinguFile.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WinguFile.html; path = docs/Classes/WinguFile.html; sourceTree = "<group>"; };
+		169EEFB02663483AF152511A6F411BAD /* ContactSocialMedia.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ContactSocialMedia.html; path = docs/Classes/ContactSocialMedia.html; sourceTree = "<group>"; };
+		16C7C6AAD52194D8CB1DB1303935F6C9 /* BarcodeType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BarcodeType.html; path = docs/Classes/Barcode/BarcodeType.html; sourceTree = "<group>"; };
+		18661F3A6BD65D4FA04CDB78D0BE4B7E /* AudioMedia.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AudioMedia.html; path = docs/Classes/AudioMedia.html; sourceTree = "<group>"; };
+		1903A5688678DE296BBE5EA34C0F3956 /* Channel Elements.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Channel Elements.html"; path = "docs/Channel Elements.html"; sourceTree = "<group>"; };
+		1AE2E9E7B7A010BCADA379F660DC930D /* SeparatorType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SeparatorType.html; path = docs/Classes/SeparatorComponent/SeparatorType.html; sourceTree = "<group>"; };
+		1B1D7EA46896754D1BF6AF80E1EDD9AD /* Components.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Components.html; path = docs/Components.html; sourceTree = "<group>"; };
+		1B3EB89A67F8B70350858A2ED30D9527 /* Deck.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Deck.html; path = docs/Classes/Deck.html; sourceTree = "<group>"; };
+		1BB4C99E03F412CA55336208D9E9772C /* typeahead.jquery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = typeahead.jquery.js; path = docs/js/typeahead.jquery.js; sourceTree = "<group>"; };
+		1E6CE74493C46E3C7FDDB3C94A1D176C /* AvailableLanguages.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AvailableLanguages.html; path = docs/Classes/AvailableLanguages.html; sourceTree = "<group>"; };
+		1FB13B0C578062926CF91F569919F05B /* FormInputType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormInputType.html; path = docs/Classes/FormElement/FormInputType.html; sourceTree = "<group>"; };
+		2108ADBAB3E3B824E447F1DB22ABD4B2 /* ImageFormat.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ImageFormat.html; path = docs/Classes/ImageMetadata/ImageFormat.html; sourceTree = "<group>"; };
+		2580EA974B8AE9CF29651B31F86E57B1 /* winguSDKEssential.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = winguSDKEssential.framework; sourceTree = "<group>"; };
+		28F53F46D73A735C18233B3D3095C6B8 /* jazzy.css */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.css; path = docs/css/jazzy.css; sourceTree = "<group>"; };
+		2AB9E15F307D8358866E6A2DB59CC529 /* Other Classes.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Other Classes.html"; path = "docs/Other Classes.html"; sourceTree = "<group>"; };
+		2E2FD412F8D31103646C45247CF9FA5D /* ActionComponent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ActionComponent.png; path = docs/docs_assets/ActionComponent.png; sourceTree = "<group>"; };
+		307FE181A9FF5257F40F31E1F1D05A43 /* FormSelectOption.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormSelectOption.html; path = docs/Classes/FormSelectOption.html; sourceTree = "<group>"; };
+		30CC09F9C3FCBCB4EC691372D5DD7EFC /* FormAnswer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormAnswer.html; path = docs/Classes/FormAnswer.html; sourceTree = "<group>"; };
+		3186DF340ED1EE63BF12DD84C5206905 /* Configuration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Configuration.html; path = docs/Configuration.html; sourceTree = "<group>"; };
+		33030568C9CB07031E612BB460750B58 /* Content.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Content.html; path = docs/Classes/Content.html; sourceTree = "<group>"; };
+		38EDF910B509E71AE1E0D842FA040D55 /* PackLocale.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PackLocale.html; path = docs/Classes/PackLocale.html; sourceTree = "<group>"; };
+		3957EBF576A3A0AF8122AD6F3E14C2F4 /* Pods_wingu_ios_sdk_essentials_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wingu_ios_sdk_essentials_Example.framework; path = "Pods-wingu-ios-sdk-essentials_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BA8DBD3110E7DB2293A4006106FC98 /* Address.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Address.html; path = docs/Classes/Address.html; sourceTree = "<group>"; };
+		3A9EA07084FFA7056821AF4FD92295A4 /* Component.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Component.html; path = docs/Classes/Component.html; sourceTree = "<group>"; };
+		3B732C6EB70972B13EAE79FC78850523 /* AlignmentType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AlignmentType.html; path = docs/Enums/AlignmentType.html; sourceTree = "<group>"; };
+		411CC1657B23AB35A0EC57E555D5896E /* ContactComponentAddress.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ContactComponentAddress.html; path = docs/Classes/ContactComponentAddress.html; sourceTree = "<group>"; };
+		47B5CFC339FEFEB55CF53D7073313E44 /* dash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = dash.png; path = docs/img/dash.png; sourceTree = "<group>"; };
+		49E9857D6026348296B94A2D0BD2E050 /* RatingComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RatingComponent.html; path = docs/Classes/RatingComponent.html; sourceTree = "<group>"; };
+		4B23F40BB7B65089B31D2EDA238D9874 /* Image.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Image.html; path = docs/Classes/Image.html; sourceTree = "<group>"; };
+		4B68326AC0A36B4CD99B71549D0BD6B5 /* Image Manager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Image Manager.html"; path = "docs/Image Manager.html"; sourceTree = "<group>"; };
+		4C1691B2AF52153A00D381316BCA7004 /* spinner.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = spinner.gif; path = docs/img/spinner.gif; sourceTree = "<group>"; };
+		4FD04812A5F28E00B49FA460A6941DCC /* GalleryComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = GalleryComponent.html; path = docs/Classes/GalleryComponent.html; sourceTree = "<group>"; };
+		54644771A7C646D0E346C134D3C459B3 /* Beacon.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Beacon.html; path = docs/Classes/Beacon.html; sourceTree = "<group>"; };
+		558A5917A18AB99F0980EC356B596FA8 /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		599B64C45D875148B07451F3AD9DD08C /* Logger.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Logger.html; path = docs/Structs/Logger.html; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5ADA5EC168CDFD19AB1C0CF92A031BC2 /* AlignmentImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AlignmentImage.html; path = docs/Classes/AlignmentImage.html; sourceTree = "<group>"; };
+		5B643EE03B8E28AC6111D95F645D2A90 /* Boundary.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Boundary.html; path = docs/Classes/Boundary.html; sourceTree = "<group>"; };
+		5B664B6B550906D9886110AAA1F15455 /* undocumented.json */ = {isa = PBXFileReference; includeInIndex = 1; name = undocumented.json; path = docs/undocumented.json; sourceTree = "<group>"; };
+		5C0B3669E66AA22F45B1AEB090423841 /* NotificationsManager.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NotificationsManager.html; path = docs/Classes/NotificationsManager.html; sourceTree = "<group>"; };
+		5EEA394F7F3EF62A390A83F1E65DF7E8 /* SurveyMonkeyComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SurveyMonkeyComponent.html; path = docs/Classes/SurveyMonkeyComponent.html; sourceTree = "<group>"; };
+		60CAA3E067B4612F37F14ED37CA88682 /* LocationComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LocationComponent.html; path = docs/Classes/LocationComponent.html; sourceTree = "<group>"; };
+		611CA4A40F146DEB08820C868D6B8898 /* WinguLocationsDelegate.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WinguLocationsDelegate.html; path = docs/Protocols/WinguLocationsDelegate.html; sourceTree = "<group>"; };
+		618D406104412D296344FB4C761FD4F6 /* Menu Item.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Menu Item.html"; path = "docs/Menu Item.html"; sourceTree = "<group>"; };
+		66517764C460619615E276A35F56E01B /* NotificationManagerProtocol.html */ = {isa = PBXFileReference; includeInIndex = 1; name = NotificationManagerProtocol.html; path = docs/Protocols/NotificationManagerProtocol.html; sourceTree = "<group>"; };
+		694C931FE41D062EB4FF9044A4D3D504 /* Analytics.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Analytics.html; path = docs/Analytics.html; sourceTree = "<group>"; };
+		6A85DA33E30939AE74175589565A2BF2 /* TextType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextType.html; path = docs/Classes/TextComponent/TextType.html; sourceTree = "<group>"; };
+		6B41BB6D9553924FD6103277F54639BA /* RatingComponentInfo.html */ = {isa = PBXFileReference; includeInIndex = 1; name = RatingComponentInfo.html; path = docs/Structs/RatingComponentInfo.html; sourceTree = "<group>"; };
+		6F12B8C184F7D753D24C648490FBF66D /* Pods-wingu-ios-sdk-essentials_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wingu-ios-sdk-essentials_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6F8499024C6135783E8CB3FE0EFCBEDE /* AudioPlaylistComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AudioPlaylistComponent.html; path = docs/Classes/AudioPlaylistComponent.html; sourceTree = "<group>"; };
+		705EDCE74B8F9B52C9A7D06662EF3461 /* Notifications.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Notifications.html; path = docs/Structs/WinguConfiguration/Notifications.html; sourceTree = "<group>"; };
+		71A0EA9411F55006F71A79DD577F95C5 /* jazzy.search.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.search.js; path = docs/js/jazzy.search.js; sourceTree = "<group>"; };
+		73FCB3569F9BA23B98906CFAEA70BADD /* Geofence.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Geofence.html; path = docs/Classes/Geofence.html; sourceTree = "<group>"; };
+		749985BFE90567CE55AAAA110630773A /* LoggingLevel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = LoggingLevel.html; path = docs/Structs/Logger/LoggingLevel.html; sourceTree = "<group>"; };
+		74B34F865E1CDAC34DB78A70186D6E81 /* BeaconScanner.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BeaconScanner.html; path = docs/Classes/BeaconScanner.html; sourceTree = "<group>"; };
+		75F53E975D2B48F751D878D2755DB483 /* Card.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Card.html; path = docs/Classes/Card.html; sourceTree = "<group>"; };
+		798D6E4C479BC1DC83E870F296BEF798 /* ContactComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ContactComponent.html; path = docs/Classes/ContactComponent.html; sourceTree = "<group>"; };
+		7D316963B4C970EB3C345E12C0519B33 /* Music Component.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Music Component.html"; path = "docs/Music Component.html"; sourceTree = "<group>"; };
+		7EBFC194B7CE7BFFE6574968A3E14436 /* FormElement.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormElement.html; path = docs/Classes/FormElement.html; sourceTree = "<group>"; };
+		80E5E8138C6F31BC80C252CE92540C34 /* Location.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Location.html; path = docs/Classes/Location.html; sourceTree = "<group>"; };
+		868988C6EB8A50FEAED8314801812BBD /* ImageType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ImageType.html; path = docs/Classes/Image/ImageType.html; sourceTree = "<group>"; };
+		881CA58B640D874AC43F23B4C3AC5F4E /* Scanners.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Scanners.html; path = docs/Scanners.html; sourceTree = "<group>"; };
+		88C3C026CE00CEE94DB178B9FDE480A2 /* VideoType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VideoType.html; path = docs/Classes/VideoComponent/VideoType.html; sourceTree = "<group>"; };
+		88F38826FD29735BA5D3036BA9F17328 /* search.json */ = {isa = PBXFileReference; includeInIndex = 1; name = search.json; path = docs/search.json; sourceTree = "<group>"; };
+		89B0F8B7A5F3C81D77F080657C4F512A /* WinguConfiguration.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WinguConfiguration.html; path = docs/Structs/WinguConfiguration.html; sourceTree = "<group>"; };
+		8C1D7DA3EF80847A8A67AC83DE4D185D /* ActionComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ActionComponent.html; path = docs/Classes/ActionComponent.html; sourceTree = "<group>"; };
+		8C53623911DBEA7444332F499F6646F6 /* MonitoringState.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MonitoringState.html; path = docs/Classes/BeaconScanner/MonitoringState.html; sourceTree = "<group>"; };
+		8D4E0E7F285A6A4C744664BC7210B8AD /* carat.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = carat.png; path = docs/img/carat.png; sourceTree = "<group>"; };
+		8E7D20DF011E0BD158DD810C534F3831 /* jquery.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jquery.min.js; path = docs/js/jquery.min.js; sourceTree = "<group>"; };
+		8FCB8285BB9DDA393BFB219EA3FF0554 /* Pods-wingu-ios-sdk-essentials_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wingu-ios-sdk-essentials_Example.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		946AB840DEC1835195842B75CAC6CE46 /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		95914C394E8FFAB7AF9FEE5790C6ECDE /* Pods-wingu-ios-sdk-essentials_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-wingu-ios-sdk-essentials_Tests.modulemap"; sourceTree = "<group>"; };
-		9971BB1020EE441A4DB550E7ADA68E31 /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		99F1D8CEE0D43F8EF10E591BE87ACA70 /* Pods-wingu-ios-sdk-essentials_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wingu-ios-sdk-essentials_Tests-resources.sh"; sourceTree = "<group>"; };
-		9DCA8DAE39456CDE8A22C448D44CC7B2 /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A61FAB992938B73754CAF1955787F421 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		BB949C05FFA875443BEC50556B892E32 /* Pods_wingu_ios_sdk_essentials_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wingu_ios_sdk_essentials_Tests.framework; path = "Pods-wingu-ios-sdk-essentials_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC617CE54C91B0382B54C85A8C962012 /* Pods-wingu-ios-sdk-essentials_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wingu-ios-sdk-essentials_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C54C405149674F991DE87B9176EA759F /* winguSDKEssential.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = winguSDKEssential.framework; sourceTree = "<group>"; };
-		D7EB88A783F2DA7394F68897855C229B /* Pods-wingu-ios-sdk-essentials_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wingu-ios-sdk-essentials_Tests-dummy.m"; sourceTree = "<group>"; };
-		E97E3A1EDD1895AB48A0185464158B0A /* Pods-wingu-ios-sdk-essentials_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ED616B6EB4E15B6216831C92C018B85F /* Pods-wingu-ios-sdk-essentials_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wingu-ios-sdk-essentials_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F3E6F14B41265F626CA4B4928D537584 /* Pods-wingu-ios-sdk-essentials_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wingu-ios-sdk-essentials_Tests-umbrella.h"; sourceTree = "<group>"; };
+		947621285A94423E4F7264E2E832216B /* CouponComponent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CouponComponent.png; path = docs/docs_assets/CouponComponent.png; sourceTree = "<group>"; };
+		95905697B117D3A8805285AA383F2641 /* LocationComponent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = LocationComponent.png; path = docs/docs_assets/LocationComponent.png; sourceTree = "<group>"; };
+		959E56673B2B20B1B1177B91499D8929 /* highlight.css */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.css; path = docs/css/highlight.css; sourceTree = "<group>"; };
+		998DCF4837DD963EF4C066B9F0A4349C /* BrandBarComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BrandBarComponent.html; path = docs/Classes/BrandBarComponent.html; sourceTree = "<group>"; };
+		9A5F5DA01A703FB200A1A9F8D3D757DE /* Type Aliases.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Type Aliases.html"; path = "docs/Type Aliases.html"; sourceTree = "<group>"; };
+		9B1174A9CE123157E1457ECACEEB8250 /* SeparatorComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SeparatorComponent.html; path = docs/Classes/SeparatorComponent.html; sourceTree = "<group>"; };
+		9C9CF2768721525791287EAC8D9BD9B7 /* TextComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = TextComponent.html; path = docs/Classes/TextComponent.html; sourceTree = "<group>"; };
+		9E9A3B46E361B723539644A4E356B61B /* Boundaries.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = Boundaries.gif; path = docs/docs_assets/Boundaries.gif; sourceTree = "<group>"; };
+		A2CE33CEFB23BD20AC362764455F6854 /* FormResubmit.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormResubmit.html; path = docs/Classes/FormResubmit.html; sourceTree = "<group>"; };
+		A38681919581CE32D99363514B8B707F /* WinguLocations.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WinguLocations.html; path = docs/Classes/WinguLocations.html; sourceTree = "<group>"; };
+		A517AD8473E9EDD9E7A713769BF4013B /* Position.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Position.html; path = docs/Classes/Position.html; sourceTree = "<group>"; };
+		A5932600605CE8E38AB6FE36E887C348 /* CouponComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = CouponComponent.html; path = docs/Classes/CouponComponent.html; sourceTree = "<group>"; };
+		A7D910164483A2D51ACE5746BBFF568F /* index.html */ = {isa = PBXFileReference; includeInIndex = 1; name = index.html; path = docs/index.html; sourceTree = "<group>"; };
+		A863FFC8E5C019A688B89133B131F451 /* Analytics.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Analytics.html; path = docs/Structs/WinguConfiguration/Analytics.html; sourceTree = "<group>"; };
+		AD5F86CBC74B62187B1092A644BCD72A /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC2E71E874652F7B8571AD19F3D9531 /* MenuItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = MenuItem.html; path = docs/Classes/MenuItem.html; sourceTree = "<group>"; };
+		AE9CABAC34C1248B5EA114E7167933A2 /* Interaction.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Interaction.html; path = docs/Classes/Interaction.html; sourceTree = "<group>"; };
+		AF08E11EE379AB44B6B0C21686121376 /* lunr.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = lunr.min.js; path = docs/js/lunr.min.js; sourceTree = "<group>"; };
+		AF0D44730E45D7035B468051B07E8411 /* Errors.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Errors.html; path = docs/Errors.html; sourceTree = "<group>"; };
+		AF946AF8AC3E69576224C6D676B22068 /* Pack.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Pack.html; path = docs/Classes/Pack.html; sourceTree = "<group>"; };
+		B2A1EEF01BB51D65020E273FFD0B2C41 /* Channel.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = Channel.png; path = docs/docs_assets/Channel.png; sourceTree = "<group>"; };
+		B4182BA8EC964B70B0BB5029F5233E85 /* Channel.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Channel.html; path = docs/Classes/Channel.html; sourceTree = "<group>"; };
+		B6E85CB15B08E195404EEBA5FD54BF2B /* winguSDKEssential-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "winguSDKEssential-Swift.h"; path = "winguSDKEssential.framework/Headers/winguSDKEssential-Swift.h"; sourceTree = "<group>"; };
+		B6F1DCDF9305CBC742107BE9BC34693D /* FormAnswerType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormAnswerType.html; path = docs/Classes/FormAnswer/FormAnswerType.html; sourceTree = "<group>"; };
+		B8A92672680C70971113F42DD95B6DE5 /* Background.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Background.html; path = docs/Classes/Background.html; sourceTree = "<group>"; };
+		B95974CA2ECDF569A5F741CF3913A870 /* Brand Bar Component.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Brand Bar Component.html"; path = "docs/Brand Bar Component.html"; sourceTree = "<group>"; };
+		BB62AE600CCF017552497D5CBAFC1636 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wingu-ios-sdk-essentials_Example-dummy.m"; sourceTree = "<group>"; };
+		BCA23A987519DEABDA293C0E28C9DB29 /* ContentOfMenuItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ContentOfMenuItem.html; path = docs/Classes/ContentOfMenuItem.html; sourceTree = "<group>"; };
+		BD632B17666030CDA7A2ECD0544EC819 /* ScanningState.html */ = {isa = PBXFileReference; includeInIndex = 1; name = ScanningState.html; path = docs/Classes/BeaconScanner/ScanningState.html; sourceTree = "<group>"; };
+		BD8F930502C3104AA9C6B33028224B5C /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wingu-ios-sdk-essentials_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BFCA4440E76928CB7019FC8587540E7A /* Pods-wingu-ios-sdk-essentials_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wingu-ios-sdk-essentials_Example-Info.plist"; sourceTree = "<group>"; };
+		C23DCA5163C7BC323CA122A71849AAF9 /* InRangeType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = InRangeType.html; path = docs/Classes/Beacon/InRangeType.html; sourceTree = "<group>"; };
+		C29C4B60562B718E78098625D360C2EC /* ContactComponent.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ContactComponent.png; path = docs/docs_assets/ContactComponent.png; sourceTree = "<group>"; };
+		C533BEF6474B7339D54D899BD9F5892B /* sfXcode.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = sfXcode.gif; path = docs/docs_assets/sfXcode.gif; sourceTree = "<group>"; };
+		C5668C95F81AE83130A6080AC2E565DC /* FormComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormComponent.html; path = docs/Classes/FormComponent.html; sourceTree = "<group>"; };
+		CB634639DEFEE43D6EBA8176A5B80CB1 /* AlignmentText.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AlignmentText.html; path = docs/Classes/AlignmentText.html; sourceTree = "<group>"; };
+		CE43C60AA710B4D9E0D384B985CA1241 /* Form Component.html */ = {isa = PBXFileReference; includeInIndex = 1; name = "Form Component.html"; path = "docs/Form Component.html"; sourceTree = "<group>"; };
+		CF8C835642CBF92351CD79EDCD9438FE /* WinguImage.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WinguImage.html; path = docs/Classes/WinguImage.html; sourceTree = "<group>"; };
+		D1AF7FCF8B205E9E47C91F9BFD68FE77 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wingu-ios-sdk-essentials_Example-umbrella.h"; sourceTree = "<group>"; };
+		D4DEAF66244CCA2542D6D18E2799CE80 /* Geofences.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Geofences.html; path = docs/Structs/WinguConfiguration/Geofences.html; sourceTree = "<group>"; };
+		D56EC16C60AF09B232F53ABF878FD185 /* Beacons.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Beacons.html; path = docs/Structs/WinguConfiguration/Beacons.html; sourceTree = "<group>"; };
+		D5A3A201F4632BB93F8648148E60AFDF /* gh.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gh.png; path = docs/img/gh.png; sourceTree = "<group>"; };
+		DCEDC3626F564112F3FED946852873E7 /* Barcode.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Barcode.html; path = docs/Classes/Barcode.html; sourceTree = "<group>"; };
+		E4D0305962A32C08DB68A718C95C4AB0 /* SeenChannels.html */ = {isa = PBXFileReference; includeInIndex = 1; name = SeenChannels.html; path = docs/Classes/SeenChannels.html; sourceTree = "<group>"; };
+		E61638FD451A503BF44335833C1EF231 /* PredefinedActions.html */ = {isa = PBXFileReference; includeInIndex = 1; name = PredefinedActions.html; path = docs/Classes/PredefinedActions.html; sourceTree = "<group>"; };
+		E93C378A99182835729B002AE074C80E /* AudioAlbum.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AudioAlbum.html; path = docs/Classes/AudioAlbum.html; sourceTree = "<group>"; };
+		E98ECB9716353FEAD1B6CE3752B60B20 /* VideoComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = VideoComponent.html; path = docs/Classes/VideoComponent.html; sourceTree = "<group>"; };
+		EA0C4838873D1657F3B6043490008C3B /* FileComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FileComponent.html; path = docs/Classes/FileComponent.html; sourceTree = "<group>"; };
+		EBC55D2916CB83EF8E53476AB5B0B56F /* wingu-ios-sdk-essentials.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "wingu-ios-sdk-essentials.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EC57EB51399EE6227D64F39FA51C5E82 /* BoundaryType.html */ = {isa = PBXFileReference; includeInIndex = 1; name = BoundaryType.html; path = docs/Classes/Boundary/BoundaryType.html; sourceTree = "<group>"; };
+		F124C207E57707BC20DDD8E463C70ACC /* AnalyticsItem.html */ = {isa = PBXFileReference; includeInIndex = 1; name = AnalyticsItem.html; path = docs/Extensions/AnalyticsItem.html; sourceTree = "<group>"; };
+		F23E01CAA68090697FCAB33C791D3B3E /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F5A058F1D6F18A74DF8DFF2C6CA88926 /* jazzy.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jazzy.js; path = docs/js/jazzy.js; sourceTree = "<group>"; };
+		F8E7E142905E22BE3A020572B452BE13 /* WebhookComponent.html */ = {isa = PBXFileReference; includeInIndex = 1; name = WebhookComponent.html; path = docs/Classes/WebhookComponent.html; sourceTree = "<group>"; };
+		FCC4B6594AE18C79128E6DF6E7F7843B /* FormDiscriminator.html */ = {isa = PBXFileReference; includeInIndex = 1; name = FormDiscriminator.html; path = docs/Classes/FormElement/FormDiscriminator.html; sourceTree = "<group>"; };
+		FDE2552A0734A07EE3613B4D664466F8 /* badge.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = badge.svg; path = docs/badge.svg; sourceTree = "<group>"; };
+		FDE33CC8CD9874B4C64ADF1B776BBB99 /* Option.html */ = {isa = PBXFileReference; includeInIndex = 1; name = Option.html; path = docs/Classes/PredefinedActions/Option.html; sourceTree = "<group>"; };
+		FF124CD0895B167412083E5BC162D74E /* winguSDKEssential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = winguSDKEssential.h; path = winguSDKEssential.framework/Headers/winguSDKEssential.h; sourceTree = "<group>"; };
+		FF5716E3E91C8B6CE25C451EE51E36EB /* UNNotificationAction.html */ = {isa = PBXFileReference; includeInIndex = 1; name = UNNotificationAction.html; path = docs/Extensions/UNNotificationAction.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		64E981DD44F6E79FB1B365DE98752B0E /* Frameworks */ = {
+		2813E4F9C713276E974BEE7333661C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB467FAD036BA8F73067A5C5AAE2CDA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C27976FD9F5E2850824483726BCF1F3F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6BE21EEC5304811474A4C4E7508BF522 /* Foundation.framework in Frameworks */,
+				C58FCA116A975BD30A78388D65EDEF0A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0399046868666B806C6B56721E9441BE /* Development Pods */ = {
+		0A062457364C84A6B64C64CDC703B6AC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC9982241365238FB11D661649B87814 /* wingu-ios-sdk-essentials */,
+				033AD4B59695FAEB8F22D2A8A5C64174 /* wingu-ios-sdk-essentials.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/wingu-ios-sdk-essentials";
+			sourceTree = "<group>";
+		};
+		47C42EB1D575186EF2600E251536898E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8C1D7DA3EF80847A8A67AC83DE4D185D /* ActionComponent.html */,
+				2E2FD412F8D31103646C45247CF9FA5D /* ActionComponent.png */,
+				0F0CE2259F01388D998EEA2270E8B5FC /* ActionType.html */,
+				39BA8DBD3110E7DB2293A4006106FC98 /* Address.html */,
+				5ADA5EC168CDFD19AB1C0CF92A031BC2 /* AlignmentImage.html */,
+				CB634639DEFEE43D6EBA8176A5B80CB1 /* AlignmentText.html */,
+				3B732C6EB70972B13EAE79FC78850523 /* AlignmentType.html */,
+				A863FFC8E5C019A688B89133B131F451 /* Analytics.html */,
+				694C931FE41D062EB4FF9044A4D3D504 /* Analytics.html */,
+				F124C207E57707BC20DDD8E463C70ACC /* AnalyticsItem.html */,
+				E93C378A99182835729B002AE074C80E /* AudioAlbum.html */,
+				18661F3A6BD65D4FA04CDB78D0BE4B7E /* AudioMedia.html */,
+				6F8499024C6135783E8CB3FE0EFCBEDE /* AudioPlaylistComponent.html */,
+				07F98691F707D6D047CE7F2A720AA2C9 /* AudioPlaylistComponent.png */,
+				1E6CE74493C46E3C7FDDB3C94A1D176C /* AvailableLanguages.html */,
+				B8A92672680C70971113F42DD95B6DE5 /* Background.html */,
+				FDE2552A0734A07EE3613B4D664466F8 /* badge.svg */,
+				DCEDC3626F564112F3FED946852873E7 /* Barcode.html */,
+				16C7C6AAD52194D8CB1DB1303935F6C9 /* BarcodeType.html */,
+				54644771A7C646D0E346C134D3C459B3 /* Beacon.html */,
+				D56EC16C60AF09B232F53ABF878FD185 /* Beacons.html */,
+				74B34F865E1CDAC34DB78A70186D6E81 /* BeaconScanner.html */,
+				9E9A3B46E361B723539644A4E356B61B /* Boundaries.gif */,
+				5B643EE03B8E28AC6111D95F645D2A90 /* Boundary.html */,
+				EC57EB51399EE6227D64F39FA51C5E82 /* BoundaryType.html */,
+				B95974CA2ECDF569A5F741CF3913A870 /* Brand Bar Component.html */,
+				998DCF4837DD963EF4C066B9F0A4349C /* BrandBarComponent.html */,
+				8D4E0E7F285A6A4C744664BC7210B8AD /* carat.png */,
+				75F53E975D2B48F751D878D2755DB483 /* Card.html */,
+				B4182BA8EC964B70B0BB5029F5233E85 /* Channel.html */,
+				B2A1EEF01BB51D65020E273FFD0B2C41 /* Channel.png */,
+				1903A5688678DE296BBE5EA34C0F3956 /* Channel Elements.html */,
+				3A9EA07084FFA7056821AF4FD92295A4 /* Component.html */,
+				1B1D7EA46896754D1BF6AF80E1EDD9AD /* Components.html */,
+				3186DF340ED1EE63BF12DD84C5206905 /* Configuration.html */,
+				15F2555030D2E2442284B0B911CF06B6 /* Contact Component.html */,
+				798D6E4C479BC1DC83E870F296BEF798 /* ContactComponent.html */,
+				C29C4B60562B718E78098625D360C2EC /* ContactComponent.png */,
+				411CC1657B23AB35A0EC57E555D5896E /* ContactComponentAddress.html */,
+				169EEFB02663483AF152511A6F411BAD /* ContactSocialMedia.html */,
+				33030568C9CB07031E612BB460750B58 /* Content.html */,
+				BCA23A987519DEABDA293C0E28C9DB29 /* ContentOfMenuItem.html */,
+				A5932600605CE8E38AB6FE36E887C348 /* CouponComponent.html */,
+				947621285A94423E4F7264E2E832216B /* CouponComponent.png */,
+				47B5CFC339FEFEB55CF53D7073313E44 /* dash.png */,
+				1B3EB89A67F8B70350858A2ED30D9527 /* Deck.html */,
+				02FE927AEBDF55A04BC935891BB162B0 /* Development Tools.html */,
+				AF0D44730E45D7035B468051B07E8411 /* Errors.html */,
+				EA0C4838873D1657F3B6043490008C3B /* FileComponent.html */,
+				09468A857AEDDF08E21ECE567D682E05 /* FileDownloadDelegate.html */,
+				CE43C60AA710B4D9E0D384B985CA1241 /* Form Component.html */,
+				30CC09F9C3FCBCB4EC691372D5DD7EFC /* FormAnswer.html */,
+				B6F1DCDF9305CBC742107BE9BC34693D /* FormAnswerType.html */,
+				C5668C95F81AE83130A6080AC2E565DC /* FormComponent.html */,
+				03FAA91A411DE005793345F8081FD231 /* FormComponentError.html */,
+				FCC4B6594AE18C79128E6DF6E7F7843B /* FormDiscriminator.html */,
+				7EBFC194B7CE7BFFE6574968A3E14436 /* FormElement.html */,
+				1FB13B0C578062926CF91F569919F05B /* FormInputType.html */,
+				A2CE33CEFB23BD20AC362764455F6854 /* FormResubmit.html */,
+				307FE181A9FF5257F40F31E1F1D05A43 /* FormSelectOption.html */,
+				4FD04812A5F28E00B49FA460A6941DCC /* GalleryComponent.html */,
+				73FCB3569F9BA23B98906CFAEA70BADD /* Geofence.html */,
+				D4DEAF66244CCA2542D6D18E2799CE80 /* Geofences.html */,
+				D5A3A201F4632BB93F8648148E60AFDF /* gh.png */,
+				959E56673B2B20B1B1177B91499D8929 /* highlight.css */,
+				4B23F40BB7B65089B31D2EDA238D9874 /* Image.html */,
+				4B68326AC0A36B4CD99B71549D0BD6B5 /* Image Manager.html */,
+				2108ADBAB3E3B824E447F1DB22ABD4B2 /* ImageFormat.html */,
+				1306D91DBCA1981C7E57DF21431A44D0 /* ImageMetadata.html */,
+				868988C6EB8A50FEAED8314801812BBD /* ImageType.html */,
+				A7D910164483A2D51ACE5746BBFF568F /* index.html */,
+				C23DCA5163C7BC323CA122A71849AAF9 /* InRangeType.html */,
+				AE9CABAC34C1248B5EA114E7167933A2 /* Interaction.html */,
+				28F53F46D73A735C18233B3D3095C6B8 /* jazzy.css */,
+				F5A058F1D6F18A74DF8DFF2C6CA88926 /* jazzy.js */,
+				71A0EA9411F55006F71A79DD577F95C5 /* jazzy.search.js */,
+				8E7D20DF011E0BD158DD810C534F3831 /* jquery.min.js */,
+				130E1D69D168F69F823568807A7AC437 /* LICENSE */,
+				80E5E8138C6F31BC80C252CE92540C34 /* Location.html */,
+				60CAA3E067B4612F37F14ED37CA88682 /* LocationComponent.html */,
+				95905697B117D3A8805285AA383F2641 /* LocationComponent.png */,
+				599B64C45D875148B07451F3AD9DD08C /* Logger.html */,
+				749985BFE90567CE55AAAA110630773A /* LoggingLevel.html */,
+				AF08E11EE379AB44B6B0C21686121376 /* lunr.min.js */,
+				618D406104412D296344FB4C761FD4F6 /* Menu Item.html */,
+				ADC2E71E874652F7B8571AD19F3D9531 /* MenuItem.html */,
+				8C53623911DBEA7444332F499F6646F6 /* MonitoringState.html */,
+				7D316963B4C970EB3C345E12C0519B33 /* Music Component.html */,
+				66517764C460619615E276A35F56E01B /* NotificationManagerProtocol.html */,
+				705EDCE74B8F9B52C9A7D06662EF3461 /* Notifications.html */,
+				0107A3BC707D97509246BE47F9D98D5C /* Notifications.html */,
+				5C0B3669E66AA22F45B1AEB090423841 /* NotificationsManager.html */,
+				FDE33CC8CD9874B4C64ADF1B776BBB99 /* Option.html */,
+				2AB9E15F307D8358866E6A2DB59CC529 /* Other Classes.html */,
+				0D07E6FE110FEE3E503AAACE5EAE614B /* Other Protocols.html */,
+				AF946AF8AC3E69576224C6D676B22068 /* Pack.html */,
+				38EDF910B509E71AE1E0D842FA040D55 /* PackLocale.html */,
+				A517AD8473E9EDD9E7A713769BF4013B /* Position.html */,
+				E61638FD451A503BF44335833C1EF231 /* PredefinedActions.html */,
+				49E9857D6026348296B94A2D0BD2E050 /* RatingComponent.html */,
+				6B41BB6D9553924FD6103277F54639BA /* RatingComponentInfo.html */,
+				112DB04F6EB05E26BC2176F1C9FE2B0E /* README.md */,
+				074FC733293CF5B34DF577104F29EF87 /* RediscoverNotificationTime.html */,
+				881CA58B640D874AC43F23B4C3AC5F4E /* Scanners.html */,
+				BD632B17666030CDA7A2ECD0544EC819 /* ScanningState.html */,
+				88F38826FD29735BA5D3036BA9F17328 /* search.json */,
+				E4D0305962A32C08DB68A718C95C4AB0 /* SeenChannels.html */,
+				9B1174A9CE123157E1457ECACEEB8250 /* SeparatorComponent.html */,
+				1AE2E9E7B7A010BCADA379F660DC930D /* SeparatorType.html */,
+				C533BEF6474B7339D54D899BD9F5892B /* sfXcode.gif */,
+				4C1691B2AF52153A00D381316BCA7004 /* spinner.gif */,
+				5EEA394F7F3EF62A390A83F1E65DF7E8 /* SurveyMonkeyComponent.html */,
+				9C9CF2768721525791287EAC8D9BD9B7 /* TextComponent.html */,
+				6A85DA33E30939AE74175589565A2BF2 /* TextType.html */,
+				9A5F5DA01A703FB200A1A9F8D3D757DE /* Type Aliases.html */,
+				1BB4C99E03F412CA55336208D9E9772C /* typeahead.jquery.js */,
+				5B664B6B550906D9886110AAA1F15455 /* undocumented.json */,
+				FF5716E3E91C8B6CE25C451EE51E36EB /* UNNotificationAction.html */,
+				E98ECB9716353FEAD1B6CE3752B60B20 /* VideoComponent.html */,
+				88C3C026CE00CEE94DB178B9FDE480A2 /* VideoType.html */,
+				F8E7E142905E22BE3A020572B452BE13 /* WebhookComponent.html */,
+				EBC55D2916CB83EF8E53476AB5B0B56F /* wingu-ios-sdk-essentials.podspec */,
+				89B0F8B7A5F3C81D77F080657C4F512A /* WinguConfiguration.html */,
+				165B82ABF02DB840BDACC1BCA9ACBF38 /* WinguFile.html */,
+				CF8C835642CBF92351CD79EDCD9438FE /* WinguImage.html */,
+				A38681919581CE32D99363514B8B707F /* WinguLocations.html */,
+				611CA4A40F146DEB08820C868D6B8898 /* WinguLocationsDelegate.html */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5B50AA06EBFD487C3FEC10EBDCEA6A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3957EBF576A3A0AF8122AD6F3E14C2F4 /* Pods_wingu_ios_sdk_essentials_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		764115581DB83577A1DD45C33052F273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2580EA974B8AE9CF29651B31F86E57B1 /* winguSDKEssential.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				0399046868666B806C6B56721E9441BE /* Development Pods */,
+				EA228D3CC9D14E939B73F23EBB1EC34E /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				DCB10BAE771C60F6173B1C930C1954D2 /* Products */,
-				D03F806AA6B155884BF92F2DB2EE65B8 /* Targets Support Files */,
+				5B50AA06EBFD487C3FEC10EBDCEA6A8A /* Products */,
+				80DF97CFDE04C7C24DDC026F30943561 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A0B9BC90BDB9CC4068E206F0497F4AEB /* Frameworks */ = {
+		80DF97CFDE04C7C24DDC026F30943561 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C54C405149674F991DE87B9176EA759F /* winguSDKEssential.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B3036FCA7ACF3CACA59AF50F0F8FC907 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A61FAB992938B73754CAF1955787F421 /* LICENSE */,
-				52C1A6BF3717812D04678FFD09B45C7F /* README.md */,
-				7C1D35B1F45B13885F9D316B09D1C3A4 /* wingu-ios-sdk-essentials.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC9982241365238FB11D661649B87814 /* wingu-ios-sdk-essentials */ = {
-			isa = PBXGroup;
-			children = (
-				89D526E2F1D74E8ACB64CF7E5E022D4F /* winguSDKEssential.h */,
-				8E4C3D8FF9D942E2203B6E8D4CF13A6D /* winguSDKEssential-Swift.h */,
-				A0B9BC90BDB9CC4068E206F0497F4AEB /* Frameworks */,
-				B3036FCA7ACF3CACA59AF50F0F8FC907 /* Pod */,
-			);
-			name = "wingu-ios-sdk-essentials";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D03F806AA6B155884BF92F2DB2EE65B8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E695419E88FDF5BFB0A48E3011FBF43B /* Pods-wingu-ios-sdk-essentials_Example */,
-				DF21E69F5921B93D6A09022089806755 /* Pods-wingu-ios-sdk-essentials_Tests */,
+				B865C6C6F436451DFE4139AB5BCBA6B8 /* Pods-wingu-ios-sdk-essentials_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		B865C6C6F436451DFE4139AB5BCBA6B8 /* Pods-wingu-ios-sdk-essentials_Example */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		DCB10BAE771C60F6173B1C930C1954D2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				78D689698209907371AA742AB7C283B6 /* Pods_wingu_ios_sdk_essentials_Example.framework */,
-				BB949C05FFA875443BEC50556B892E32 /* Pods_wingu_ios_sdk_essentials_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DF21E69F5921B93D6A09022089806755 /* Pods-wingu-ios-sdk-essentials_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0A6383B8E53A1621C065EF92AFF1F98C /* Info.plist */,
-				95914C394E8FFAB7AF9FEE5790C6ECDE /* Pods-wingu-ios-sdk-essentials_Tests.modulemap */,
-				7F6C2FE9C654DC8A3BAFD0E1CD208A6D /* Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.markdown */,
-				1BE35E9285A884D8DEAF708C42E52C3A /* Pods-wingu-ios-sdk-essentials_Tests-acknowledgements.plist */,
-				D7EB88A783F2DA7394F68897855C229B /* Pods-wingu-ios-sdk-essentials_Tests-dummy.m */,
-				ED616B6EB4E15B6216831C92C018B85F /* Pods-wingu-ios-sdk-essentials_Tests-frameworks.sh */,
-				99F1D8CEE0D43F8EF10E591BE87ACA70 /* Pods-wingu-ios-sdk-essentials_Tests-resources.sh */,
-				F3E6F14B41265F626CA4B4928D537584 /* Pods-wingu-ios-sdk-essentials_Tests-umbrella.h */,
-				52139523B1453CF2E2F3C617918DC484 /* Pods-wingu-ios-sdk-essentials_Tests.debug.xcconfig */,
-				E97E3A1EDD1895AB48A0185464158B0A /* Pods-wingu-ios-sdk-essentials_Tests.release.xcconfig */,
-			);
-			name = "Pods-wingu-ios-sdk-essentials_Tests";
-			path = "Target Support Files/Pods-wingu-ios-sdk-essentials_Tests";
-			sourceTree = "<group>";
-		};
-		E695419E88FDF5BFB0A48E3011FBF43B /* Pods-wingu-ios-sdk-essentials_Example */ = {
-			isa = PBXGroup;
-			children = (
-				6ECB6E589A0D9E84FEA39EADCF7B2040 /* Info.plist */,
-				64C4B9DA30AD882328DDC5D6F8AE56F3 /* Pods-wingu-ios-sdk-essentials_Example.modulemap */,
-				44FA27E051E926CCC81834232516389A /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown */,
-				946AB840DEC1835195842B75CAC6CE46 /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist */,
-				010599084255D7D5E70CB30E3653F1C9 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */,
-				BC617CE54C91B0382B54C85A8C962012 /* Pods-wingu-ios-sdk-essentials_Example-frameworks.sh */,
-				3418D6A3EB286B0BE7CA3ADCB00931B5 /* Pods-wingu-ios-sdk-essentials_Example-resources.sh */,
-				2A2A5BCD2D9719BA4E0898538A5DA6DE /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */,
-				9971BB1020EE441A4DB550E7ADA68E31 /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */,
-				9DCA8DAE39456CDE8A22C448D44CC7B2 /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */,
+				8FCB8285BB9DDA393BFB219EA3FF0554 /* Pods-wingu-ios-sdk-essentials_Example.modulemap */,
+				F23E01CAA68090697FCAB33C791D3B3E /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.markdown */,
+				558A5917A18AB99F0980EC356B596FA8 /* Pods-wingu-ios-sdk-essentials_Example-acknowledgements.plist */,
+				BB62AE600CCF017552497D5CBAFC1636 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m */,
+				6F12B8C184F7D753D24C648490FBF66D /* Pods-wingu-ios-sdk-essentials_Example-frameworks.sh */,
+				BFCA4440E76928CB7019FC8587540E7A /* Pods-wingu-ios-sdk-essentials_Example-Info.plist */,
+				D1AF7FCF8B205E9E47C91F9BFD68FE77 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h */,
+				AD5F86CBC74B62187B1092A644BCD72A /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */,
+				BD8F930502C3104AA9C6B33028224B5C /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */,
 			);
 			name = "Pods-wingu-ios-sdk-essentials_Example";
 			path = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example";
 			sourceTree = "<group>";
 		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C392A8AA4F71AAFD69DFCB2C0E48F7A8 /* wingu-ios-sdk-essentials */ = {
+			isa = PBXGroup;
+			children = (
+				FF124CD0895B167412083E5BC162D74E /* winguSDKEssential.h */,
+				B6E85CB15B08E195404EEBA5FD54BF2B /* winguSDKEssential-Swift.h */,
+				764115581DB83577A1DD45C33052F273 /* Frameworks */,
+				47C42EB1D575186EF2600E251536898E /* Pod */,
+				0A062457364C84A6B64C64CDC703B6AC /* Support Files */,
+			);
+			name = "wingu-ios-sdk-essentials";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EA228D3CC9D14E939B73F23EBB1EC34E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C392A8AA4F71AAFD69DFCB2C0E48F7A8 /* wingu-ios-sdk-essentials */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		63282A4F1D61E5C238B546CF72953DCC /* Headers */ = {
+		C581851E4930DD0FB287495742D49D67 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D257C0818DB89E4D5D38DE721A66BE /* Pods-wingu-ios-sdk-essentials_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B7E3AD8676BE624AAC9FC4C78281EFC6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA94E19D1760DEAB3030722FB7F192C7 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h in Headers */,
+				39C69C5964921B378D1B6E6DDA7E8D97 /* Pods-wingu-ios-sdk-essentials_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7229C58F12C88DEF63168051031B7D5C /* Pods-wingu-ios-sdk-essentials_Example */ = {
+		F8963FBBB45F2146BC5A64D90F6D012E /* Pods-wingu-ios-sdk-essentials_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5AAE524212D21BC25A394A582694E664 /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Example" */;
+			buildConfigurationList = 34412D579805152E1E8631DCD25D3C5B /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Example" */;
 			buildPhases = (
-				91DDFF7670D39788E65D59C855F71953 /* Sources */,
-				C27976FD9F5E2850824483726BCF1F3F /* Frameworks */,
-				B7E3AD8676BE624AAC9FC4C78281EFC6 /* Headers */,
+				C581851E4930DD0FB287495742D49D67 /* Headers */,
+				C32C0C7A65E7AAC106BA649362B5EC08 /* Sources */,
+				2813E4F9C713276E974BEE7333661C78 /* Frameworks */,
+				020203CF1E1121626332E4D303E7AEF2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38BB3BE41BABF3F1E28190E136C38A1A /* PBXTargetDependency */,
 			);
 			name = "Pods-wingu-ios-sdk-essentials_Example";
 			productName = "Pods-wingu-ios-sdk-essentials_Example";
-			productReference = 78D689698209907371AA742AB7C283B6 /* Pods_wingu_ios_sdk_essentials_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A21DBB1C7EB5ACE7B92B7BDC3913982C /* Pods-wingu-ios-sdk-essentials_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 18E1AD1669C3E9FD1452E830443AAFF7 /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Tests" */;
-			buildPhases = (
-				582A0120D23FAE7F5BD162912CA5D2EC /* Sources */,
-				64E981DD44F6E79FB1B365DE98752B0E /* Frameworks */,
-				63282A4F1D61E5C238B546CF72953DCC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-wingu-ios-sdk-essentials_Tests";
-			productName = "Pods-wingu-ios-sdk-essentials_Tests";
-			productReference = BB949C05FFA875443BEC50556B892E32 /* Pods_wingu_ios_sdk_essentials_Tests.framework */;
+			productReference = 3957EBF576A3A0AF8122AD6F3E14C2F4 /* Pods_wingu_ios_sdk_essentials_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -260,41 +474,53 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DCB10BAE771C60F6173B1C930C1954D2 /* Products */;
+			productRefGroup = 5B50AA06EBFD487C3FEC10EBDCEA6A8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7229C58F12C88DEF63168051031B7D5C /* Pods-wingu-ios-sdk-essentials_Example */,
-				A21DBB1C7EB5ACE7B92B7BDC3913982C /* Pods-wingu-ios-sdk-essentials_Tests */,
+				F8963FBBB45F2146BC5A64D90F6D012E /* Pods-wingu-ios-sdk-essentials_Example */,
+				3C9A2B1BF64E595BF29EDDEC7726B7FF /* wingu-ios-sdk-essentials */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		582A0120D23FAE7F5BD162912CA5D2EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		020203CF1E1121626332E4D303E7AEF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C0D582F403EC08DAB632AA880CB6D0 /* Pods-wingu-ios-sdk-essentials_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91DDFF7670D39788E65D59C855F71953 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C32C0C7A65E7AAC106BA649362B5EC08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6628E777133F84C97784EA843E87AF9C /* Pods-wingu-ios-sdk-essentials_Example-dummy.m in Sources */,
+				17D9990270308267869115F19BFECAC3 /* Pods-wingu-ios-sdk-essentials_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		38BB3BE41BABF3F1E28190E136C38A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "wingu-ios-sdk-essentials";
+			target = 3C9A2B1BF64E595BF29EDDEC7726B7FF /* wingu-ios-sdk-essentials */;
+			targetProxy = C5BFA4AFB89E5F683A3CEEDA54692F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		55A25948450A1EB9BE640A74D53A46D8 /* Debug */ = {
+		A413AADA1B666717C598CD77F88411DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9971BB1020EE441A4DB550E7ADA68E31 /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */;
+			baseConfigurationReference = BD8F930502C3104AA9C6B33028224B5C /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -304,45 +530,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Pods-wingu-ios-sdk-essentials_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Pods-wingu-ios-sdk-essentials_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7DB4E230A08D812ABCF7B2C662C1D157 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E97E3A1EDD1895AB48A0185464158B0A /* Pods-wingu-ios-sdk-essentials_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Tests/Pods-wingu-ios-sdk-essentials_Tests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -357,7 +550,21 @@
 			};
 			name = Release;
 		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		A97F1ECC5E014AE669ACF990D204A567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033AD4B59695FAEB8F22D2A8A5C64174 /* wingu-ios-sdk-essentials.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -410,8 +617,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -420,11 +628,12 @@
 			};
 			name = Debug;
 		};
-		9A0370245F7B14179330A74F299D198C /* Release */ = {
+		D2F9F620F8FDB2CB6AF6069DBB711D6E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DCA8DAE39456CDE8A22C448D44CC7B2 /* Pods-wingu-ios-sdk-essentials_Example.release.xcconfig */;
+			baseConfigurationReference = AD5F86CBC74B62187B1092A644BCD72A /* Pods-wingu-ios-sdk-essentials_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -434,9 +643,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Pods-wingu-ios-sdk-essentials_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Example/Pods-wingu-ios-sdk-essentials_Example.modulemap";
@@ -448,13 +657,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -504,55 +712,38 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		ED58DBAD870629EB66B5952FD8612867 /* Debug */ = {
+		EE7F6F3ACF8CD21CBA5FF37EC0B26143 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52139523B1453CF2E2F3C617918DC484 /* Pods-wingu-ios-sdk-essentials_Tests.debug.xcconfig */;
+			baseConfigurationReference = 033AD4B59695FAEB8F22D2A8A5C64174 /* wingu-ios-sdk-essentials.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wingu-ios-sdk-essentials_Tests/Pods-wingu-ios-sdk-essentials_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18E1AD1669C3E9FD1452E830443AAFF7 /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Tests" */ = {
+		1577FF2920CB81E88CA81B393BAAF710 /* Build configuration list for PBXAggregateTarget "wingu-ios-sdk-essentials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED58DBAD870629EB66B5952FD8612867 /* Debug */,
-				7DB4E230A08D812ABCF7B2C662C1D157 /* Release */,
+				A97F1ECC5E014AE669ACF990D204A567 /* Debug */,
+				EE7F6F3ACF8CD21CBA5FF37EC0B26143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -560,17 +751,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				C92782E717C52E3633C9A5F211E7987A /* Debug */,
+				EA8C7AF90938697605468604B2A17B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5AAE524212D21BC25A394A582694E664 /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Example" */ = {
+		34412D579805152E1E8631DCD25D3C5B /* Build configuration list for PBXNativeTarget "Pods-wingu-ios-sdk-essentials_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55A25948450A1EB9BE640A74D53A46D8 /* Debug */,
-				9A0370245F7B14179330A74F299D198C /* Release */,
+				D2F9F620F8FDB2CB6AF6069DBB711D6E /* Debug */,
+				A413AADA1B666717C598CD77F88411DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
